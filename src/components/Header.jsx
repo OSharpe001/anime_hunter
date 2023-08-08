@@ -1,10 +1,13 @@
-import React from 'react'
+import logo from "../images/logo.png";
 
 export default function Header() {
   return (
-    <div>
-        <img src=".../public/favicon.ico" alt="target" />
+    <header>
+      <div className="banner">
+        <img className="logo" src={logo} alt="target" />
         <h1 className="banner-title">Anime Hunter</h1>
-    </div>
+      </div>
+      <div>RESERVED FOR NAV ITEMS (IF NECESSARY)</div>
+    </header>
   );
 };
