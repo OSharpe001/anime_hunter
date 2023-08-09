@@ -1,9 +1,9 @@
 import { useEffect } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 
-export default function DisplayAnimeList({ animeList }) {
+export default function DisplayAnimeList({ animeList, navigate }) {
 
-  const navigate = useNavigate();
+  // const navigate = useNavigate();
 
   const data = animeList.data;
 

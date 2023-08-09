@@ -1,10 +1,10 @@
 import { useState, useEffect } from 'react';
 import { fetchFromAPI } from "../utils/fetchFromAPI";
-import { useNavigate } from "react-router-dom";
+// import { useNavigate } from "react-router-dom";
 
-export default function GetAnime({ setAnimeList }) {
+export default function GetAnime({ setAnimeList, navigate }) {
 
-    const navigate = useNavigate();
+    // const navigate = useNavigate();
 
     const [title, setTitle] = useState("");
     const [genres, setGenres] = useState([]);
