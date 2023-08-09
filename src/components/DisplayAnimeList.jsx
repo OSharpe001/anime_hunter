@@ -50,7 +50,7 @@ export default function DisplayAnimeList({ animeList }) {
 
               <div className="poster-link">
                 <img src={item.image} alt="poster" />
-                <Link className="nav-item button" aria-label="On Click" to={item.link} >Find on myanimelist.net</Link>
+                <Link className="nav-item button" target="_blank" aria-label="On Click" to={item.link} >Find on myanimelist.net</Link>
               </div>
               
             </li>
