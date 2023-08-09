@@ -2,7 +2,6 @@ import { useState, useEffect } from 'react';
 import { fetchFromAPI } from "../utils/fetchFromAPI";
 import { useNavigate } from "react-router-dom";
 
-
 export default function GetAnime({ setAnimeList }) {
 
     const navigate = useNavigate();
