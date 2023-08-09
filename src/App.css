@@ -2,6 +2,22 @@
   text-align: center;
 }
 
+.search-page {
+  justify-self: center;
+  justify-content: center;
+  justify-items: center;
+  /* margin: ?????; */
+  border: 2px solid green;
+}
+
+.search-page button {
+  margin-bottom: 30px;
+}
+
+.search-page h1 {
+  font-size: 20pt;
+}
+
 label {
   font-size: 16pt;
   display: block;
@@ -12,4 +28,66 @@ input {
   font-size: 16pt;
   display: block;
   margin: 10px auto 30px;
+}
+
+header nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  padding: 0 5px;
+  height: 55px;
+  /* width: 100vw; */
+  /* position: absolute; */
+  /* top: 0; */
+  /* left: 0; */
+  border: 2px solid red;
+}
+.banner {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 5px 10px;
+  border: 2px solid blue;
+}
+.banner h1 {
+  padding: 5px 10px;
+  margin: 0;
+}
+.logo {
+  padding: 5px 10px;
+  width: 35px;
+  border-radius: 50%;
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100vw;
+  height: 55px;
+  position: absolute;
+  left: 0;
+  bottom:0;
+  color: aliceblue;
+  background-color: red;
+  border: 2px solid red;
+}
+
+button, .button {
+  font-size: 14pt;
+  color: black;
+  padding: 3px 8px;
+  width: 16ch;
+  color: blue;
+  text-decoration: none;
+  background-color: aliceblue;
+  border-radius: 16px;
+  border: 1px solid red;
+}
+button:hover, .button:hover {
+  text-decoration: underline;
 }

@@ -9,11 +9,11 @@ export default function GetAnime({ setAnimeList }) {
 
     const [title, setTitle] = useState("");
     const [genres, setGenres] = useState([]);
-    
+
     const [formInfo, setFormInfo] = useState({
         searchTitle: "",
         searchGenres: []
-    })
+    });
 
 
     const handleChange = ({ target }) => {
@@ -47,7 +47,7 @@ export default function GetAnime({ setAnimeList }) {
     }, [formInfo]);
 
   return (
-    <div>
+    <section className="search-page">
         <h1>Let's Hunt Some Anime!</h1>
         <form action="">
             <label htmlFor="title">Title</label>
@@ -56,6 +56,6 @@ export default function GetAnime({ setAnimeList }) {
             <input onChange={handleChange} type="text" name="genres" placeholder="Genres " value={genres}/>
             <button onClick={e=>handleSubmit(e)} type="submit" className="get-list">Check the Bounty</button>
         </form>
-    </div>
+    </section>
   );
 };
