@@ -28,8 +28,81 @@
 
 .data-readout {
   min-height: 82vh;
-
+  text-align: left;
 }
+.data-readout h1 {
+  padding: 2vh 2vw;
+  margin: 2vh 0 10vh;
+  text-align: center;
+  text-decoration: underline;
+  border: 2px solid blue;
+}
+.anime-list {
+  margin: 0;
+  padding: 0 10px ;
+  /* border: 2px solid green; */
+}
+.bounty{
+  padding: 30px;
+  margin: 3vh 0 7vh;
+  background-color: rgb(253, 238, 220);
+  border: 1px solid black;
+}
+.data-readout h2 {
+  /* display: inline; */
+  /* width: min-content; */
+  border: 2px solid red;
+}
+.data-readout p {
+  font-size: 16pt;
+}
+.synopsis {
+  line-height: 1.5;
+  padding: 10px;
+  background-color: rgb(234, 225, 214);
+  border-radius: 12px;
+}
+.header {
+  font-size: 17pt;
+  margin-left: 20px;
+  text-decoration: underline;
+}
+.title-thumbnail {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.title-thumbnail .title {
+  flex: 50%;
+  display: inline;
+  width: fit-content;
+  padding-left: 20px;
+  justify-content: left;
+}
+.title-thumbnail .image {
+  flex: 50%;
+  justify-content: left;
+}
+
+.poster-link {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 10px;
+  margin: 20px auto 50px;
+  border: 2px solid black;
+}
+.poster-link .button {
+  width: max-content;
+  height: max-content;
+}
+.reset-readout {
+  height: 84vh;
+  text-align: center;
+  background-color: rgb(253, 238, 220);
+}
+
 .search-page {
   justify-self: center;
   justify-content: center;
@@ -131,4 +204,8 @@ button, .button {
 }
 button:hover, .button:hover {
   text-decoration: underline;
+}
+
+li {
+  list-style-type: none;
 }

@@ -8,59 +8,56 @@ export default function DisplayAnimeList({ animeList }) {
   const data = animeList.data;
 
   useEffect(() => {
-    !data && setTimeout(navigate, 1500, ("/"));
+    // !data && setTimeout(navigate, 1500, ("/"));
+    !data && setTimeout(navigate, 21500, ("/"));
   }, [data]);
 
-  console.log("DISPLAYANIMELIST'S ANIMELIST.DATA: ", animeList.data);
   console.log("DISPLAYANIMELIST'S DATA: ", data);
 
   return (
     <section className="data-readout">
         <h1>The Bounty</h1>
-        {animeList.data ?
+        {data ?
           <ul className="anime-list">
-          {animeList.data.map(item => (
-            <li key={item.id}>
-              <h2 className="title">{item.title}</h2>
+          {data.map(item => (
+            <li key={item.id} className="bounty">
+              <div className="title-thumbnail">
+                <h2 className="title">{item.title}</h2>
+                <img src={item.thumb} alt="thumbnail" />
+              </div>
+              
               <p>Current Rank: {item.ranking}</p>
+              <p>Amount of Episodes: {item.episodes}</p>
+
+              <p classname="header">Genres: </p>
+              <ul>
+                {item.genres.map((genre, index) => (
+                  <li key={`${index}-${genre}`}>{genre}</li>
+                ))}
+              </ul>
+              
               <p>Media Type: {item.type}</p>
-              <p className="synopsis-header">Synopsis: </p>
-              <p className="synopsis">{item.synopsis}</p>
-            </li>
-          ))}
-        </ul> :
-        <h2>Take another shot</h2>
-        }
-
-
-
-        {/* <ul className="anime-list">
-          {animeList.data.map(item => (
-            <li key={item.id}>
-              <p className="alt-titles-header">Alternative Title Names: </p>
+              <p className="synopsis">
+                <span className="header">Synopsis:</span><br/> {item.synopsis}
+              </p>
+              
+              <p className="header">Alternative Title Names: </p>
               <ul>
                 {item.alternativeTitles.map((title, index) => (
                   <li key={`${title}-${index}`}>{title}</li>
                 ))}
               </ul>
-              <p>Amount of Episodes: {item}</p>
-              <p classname="genres-header">Genres: </p>
-              <ul>
-                {item.genres.map((genre, index) => (
-                  <li key={`${index}-${genre}`}></li>
-                ))}
-              </ul>
-              <img src={item.image} alt="poster" />
-              <Link className="nav-item button" aria-label="On Click" to={item.link} >Find on MyAnimeList.Net</Link>
-              // <p>Current Rank: {item.ranking}</p>
-              <img src={item.thumb} alt="thumbnail" />
-              // <h2 className="title">{item.title}</h2>
-              // <p>Media Type: {item.type}</p>
-              // <p className="synopsis-header">Synopsis: </p>
-              // <p className="synopsis">{item.synopsis}</p>
+
+              <div className="poster-link">
+                <img src={item.image} alt="poster" />
+                <Link className="nav-item button" aria-label="On Click" to={item.link} >Find on myanimelist.net</Link>
+              </div>
+              
             </li>
           ))}
-        </ul> */}
+        </ul> :
+        <h2 className="reset-readout">Take another shot</h2>
+        }
     </section>
   );
 };
