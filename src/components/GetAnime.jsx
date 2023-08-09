@@ -15,7 +15,6 @@ export default function GetAnime({ setAnimeList }) {
         searchGenres: []
     });
 
-
     const handleChange = ({ target }) => {
         let name = target.name;
         let value = target.value;
@@ -34,11 +33,9 @@ export default function GetAnime({ setAnimeList }) {
     };
 
     useEffect(() => {
-        console.log("FORMINFO READ FROM WITHIN USEEFFECT: ", formInfo);
         try {
             fetchFromAPI(`anime?page=1&size=10${formInfo.searchGenres.length>0 ? `&genres=${formInfo.searchGenres.slice(0).join(",")}` : ""}&sortBy=ranking&sortOrder=asc${formInfo.searchTitle ? `&search=${formInfo.searchTitle}` : ""}`)
             .then((data) => {
-                console.log("DATA FROM FETCH: ", data);
                 setAnimeList(data);
             });
         } catch (error) {
