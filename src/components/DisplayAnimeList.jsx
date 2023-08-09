@@ -8,11 +8,9 @@ export default function DisplayAnimeList({ animeList }) {
   const data = animeList.data;
 
   useEffect(() => {
-    // !data && setTimeout(navigate, 1500, ("/"));
+    // !data && setTimeout(navigate, 1500, ("/")); // ***PLACE THIS BACK WHEN TESTING IS DONE!***
     !data && setTimeout(navigate, 21500, ("/"));
   }, [data]);
-
-  console.log("DISPLAYANIMELIST'S DATA: ", data);
 
   return (
     <section className="data-readout">
@@ -26,23 +24,23 @@ export default function DisplayAnimeList({ animeList }) {
                 <img src={item.thumb} alt="thumbnail" />
               </div>
               
-              <p>Current Rank: {item.ranking}</p>
-              <p>Amount of Episodes: {item.episodes}</p>
+              <p><span className="header">Current Rank:</span> {item.ranking}</p>
+              <p><span className="header">Amount of Episodes:</span> {item.episodes}</p>
 
-              <p classname="header">Genres: </p>
-              <ul>
+              <p className="header">Genres: </p>
+              <ul className="genre-list">
                 {item.genres.map((genre, index) => (
                   <li key={`${index}-${genre}`}>{genre}</li>
                 ))}
               </ul>
               
-              <p>Media Type: {item.type}</p>
+              <p><span className="header">Media Type:</span> {item.type}</p>
               <p className="synopsis">
                 <span className="header">Synopsis:</span><br/> {item.synopsis}
               </p>
               
-              <p className="header">Alternative Title Names: </p>
-              <ul>
+              <p className="header">Aliases/AKA: </p>
+              <ul className="alias-list">
                 {item.alternativeTitles.map((title, index) => (
                   <li key={`${title}-${index}`}>{title}</li>
                 ))}
