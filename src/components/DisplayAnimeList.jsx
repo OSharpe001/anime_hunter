@@ -1,13 +1,24 @@
-import { Link } from "react-router-dom";
+import { useEffect } from "react";
+import { Link, useNavigate } from "react-router-dom";
 
 export default function DisplayAnimeList({ animeList }) {
 
-  console.log("DISPLAYANIMELIST PROPS (ANIMELIST): ", animeList.data)
+  const navigate = useNavigate();
+
+  const data = animeList.data;
+
+  useEffect(() => {
+    !data && setTimeout(navigate, 1500, ("/"));
+  }, [data]);
+
+  console.log("DISPLAYANIMELIST'S ANIMELIST.DATA: ", animeList.data);
+  console.log("DISPLAYANIMELIST'S DATA: ", data);
 
   return (
-    <div>
+    <section className="data-readout">
         <h1>The Bounty</h1>
-        <ul className="anime-list">
+        {animeList.data ?
+          <ul className="anime-list">
           {animeList.data.map(item => (
             <li key={item.id}>
               <h2 className="title">{item.title}</h2>
@@ -17,7 +28,9 @@ export default function DisplayAnimeList({ animeList }) {
               <p className="synopsis">{item.synopsis}</p>
             </li>
           ))}
-        </ul>
+        </ul> :
+        <h2>Take another shot</h2>
+        }
 
 
 
@@ -48,6 +61,6 @@ export default function DisplayAnimeList({ animeList }) {
             </li>
           ))}
         </ul> */}
-    </div>
+    </section>
   );
 };
