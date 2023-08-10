@@ -23,119 +23,119 @@ import yuuji from "../assets/images/anime_pics/yuuji.png";
 import yuzuriha from "../assets/images/anime_pics/yuzuriha.png";
 
 export const images = [
-{
-    class: "character-show-image",
-    image: ainz,
-    alt: "background fan art"
-},
-{
-    class: "character-show-image",
-    image: albedo1,
-    alt: "background fan art"
-},
-{
-    class: "character-show-image",
-    image: albedo2,
-    alt: "background fan art"
-},
-{
-    class: "character-show-image",
-    image: clementine,
-    alt: "background fan art"
-},
-{
-    class: "character-show-image",
-    image: d,
-    alt: "background fan art"
-},
-{
-    class: "character-show-image",
-    image: demiurge,
-    alt: "background fan art"
-},
-{
-    class: "character-show-image",
-    image: demon_slayer,
-    alt: "background fan art"
-},
-{
-    class: "character-show-image",
-    image: fran,
-    alt: "background fan art"
-},
-{
-    class: "character-show-image",
-    image: goblin_slayer,
-    alt: "background fan art"
-},
-{
-    class: "character-show-image",
-    image: gojou,
-    alt: "background fan art"
-},
-{
-    class: "character-show-image",
-    image: hells_paradise,
-    alt: "background fan art"
-},
-{
-    class: "character-show-image",
-    image: hinata,
-    alt: "background fan art"
-},
-{
-    class: "character-show-image",
-    image: jobless_reincarnation,
-    alt: "background fan art"
-},
-{
-    class: "character-show-image",
-    image: midoriya,
-    alt: "background fan art"
-},
-{
-    class: "character-show-image",
-    image: naruto1,
-    alt: "background fan art"
-},
-{
-    class: "character-show-image",
-    image: naruto2,
-    alt: "background fan art"
-},
-{
-    class: "character-show-image",
-    image: rimuru,
-    alt: "background fan art"
-},
-{
-    class: "character-show-image",
-    image: roxy,
-    alt: "background fan art"
-},
-{
-    class: "character-show-image",
-    image: shigaraki,
-    alt: "background fan art"
-},
-{
-    class: "character-show-image",
-    image: shippuden,
-    alt: "background fan art"
-},
-{
-    class: "character-show-image",
-    image: tanjiro,
-    alt: "background fan art"
-},
-{
-    class: "character-show-image",
-    image: yuuji,
-    alt: "background fan art"
-},
-{
-    class: "character-show-image",
-    image: yuzuriha,
-    alt: "background fan art"
-},
+    {
+        class: "character-show-image",
+        image: ainz,
+        alt: "background fan art"
+    },
+    {
+        class: "character-show-image",
+        image: albedo1,
+        alt: "background fan art"
+    },
+    {
+        class: "character-show-image",
+        image: albedo2,
+        alt: "background fan art"
+    },
+    {
+        class: "character-show-image",
+        image: clementine,
+        alt: "background fan art"
+    },
+    {
+        class: "character-show-image",
+        image: d,
+        alt: "background fan art"
+    },
+    {
+        class: "character-show-image",
+        image: demiurge,
+        alt: "background fan art"
+    },
+    {
+        class: "character-show-image",
+        image: demon_slayer,
+        alt: "background fan art"
+    },
+    {
+        class: "character-show-image",
+        image: fran,
+        alt: "background fan art"
+    },
+    {
+        class: "character-show-image",
+        image: goblin_slayer,
+        alt: "background fan art"
+    },
+    {
+        class: "character-show-image",
+        image: gojou,
+        alt: "background fan art"
+    },
+    {
+        class: "character-show-image",
+        image: hells_paradise,
+        alt: "background fan art"
+    },
+    {
+        class: "character-show-image",
+        image: hinata,
+        alt: "background fan art"
+    },
+    {
+        class: "character-show-image",
+        image: jobless_reincarnation,
+        alt: "background fan art"
+    },
+    {
+        class: "character-show-image",
+        image: midoriya,
+        alt: "background fan art"
+    },
+    {
+        class: "character-show-image",
+        image: naruto1,
+        alt: "background fan art"
+    },
+    {
+        class: "character-show-image",
+        image: naruto2,
+        alt: "background fan art"
+    },
+    {
+        class: "character-show-image",
+        image: rimuru,
+        alt: "background fan art"
+    },
+    {
+        class: "character-show-image",
+        image: roxy,
+        alt: "background fan art"
+    },
+    {
+        class: "character-show-image",
+        image: shigaraki,
+        alt: "background fan art"
+    },
+    {
+        class: "character-show-image",
+        image: shippuden,
+        alt: "background fan art"
+    },
+    {
+        class: "character-show-image",
+        image: tanjiro,
+        alt: "background fan art"
+    },
+    {
+        class: "character-show-image",
+        image: yuuji,
+        alt: "background fan art"
+    },
+    {
+        class: "character-show-image",
+        image: yuzuriha,
+        alt: "background fan art"
+    },
 ];

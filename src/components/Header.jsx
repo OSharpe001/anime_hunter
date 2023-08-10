@@ -1,10 +1,7 @@
 import logo from "../assets/images/logo.png";
-import { useNavigate } from "react-router-dom";
 
 
-export default function Header() {
-
-  const navigate = useNavigate();
+export default function Header({ navigate }) {
 
   const backHome = () => {
     navigate("/");

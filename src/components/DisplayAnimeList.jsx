@@ -3,14 +3,12 @@ import { Link } from "react-router-dom";
 
 export default function DisplayAnimeList({ animeList, navigate }) {
 
-  // const navigate = useNavigate();
-
   const data = animeList.data;
 
   useEffect(() => {
     // !data && setTimeout(navigate, 1500, ("/")); // ***PLACE THIS BACK WHEN TESTING IS DONE!***
     !data && setTimeout(navigate, 21500, ("/"));
-  }, [data]);
+  }, [data, navigate]);
 
   return (
     <section className="data-readout">

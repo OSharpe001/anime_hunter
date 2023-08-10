@@ -7,15 +7,7 @@ import './App.css';
 
 export default function App() {
 
-  images.map((image => console.log("IMAGES IN MAIN APP: ", image)));
-  // console.log("APP.JS IMAGES.LENGTH: ", images.length);
-  // console.log("Math.floor(Math.random * images.length): ", Math.floor(Math.random() * images.length));
-
-  const [currentBackground, setCurrentBackground] = useState(images[Math.floor(Math.random() * images.length)]);
-  console.log("NEW CURRENTBACKGROUND INFO: ", currentBackground);
-  console.log("NEW CURRENTBACKGROUND.ALT: ", currentBackground.alt);
-  console.log("NEW CURRENTBACKGROUND.CLASS: ", currentBackground.class);
-  console.log("NEW CURRENTBACKGROUND.IMAGE: ", currentBackground.image);
+  const currentBackground = images[Math.floor(Math.random() * images.length)];
 
   const navigate = useNavigate();
 
@@ -23,9 +15,9 @@ export default function App() {
 
   return (
     <div className={`App ${currentBackground.class}`} style={{backgroundImage: `url("${currentBackground.image}")`}}>
-      <Header />
+      <Header navigate={navigate}/>
       <Routes>
-            <Route path="/" element={<HomePage />} />
+            <Route path="/" element={<HomePage navigate={navigate} />} />
             <Route path="/hunt" element={<GetAnime
                                             setAnimeList={setAnimeList}
                                             navigate={navigate}

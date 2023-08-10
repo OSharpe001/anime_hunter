@@ -1,10 +1,8 @@
 import { useState, useEffect } from 'react';
 import { fetchFromAPI } from "../utils/fetchFromAPI";
-// import { useNavigate } from "react-router-dom";
+
 
 export default function GetAnime({ setAnimeList, navigate }) {
-
-    // const navigate = useNavigate();
 
     const [title, setTitle] = useState("");
     const [genres, setGenres] = useState([]);
@@ -40,7 +38,7 @@ export default function GetAnime({ setAnimeList, navigate }) {
         } catch (error) {
             console.log("An error within the useEffect: ", error);
         }
-    }, [formInfo]);
+    }, [formInfo, setAnimeList]);
 
   return (
     <section className="search-page">
