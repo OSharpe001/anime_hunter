@@ -6,8 +6,8 @@ export default function DisplayAnimeList({ animeList, navigate }) {
   const data = animeList.data;
 
   useEffect(() => {
-    // !data && setTimeout(navigate, 1500, ("/")); // ***PLACE THIS BACK WHEN TESTING IS DONE!***
-    !data && setTimeout(navigate, 21500, ("/"));
+    !data && setTimeout(navigate, 1500, ("/")); // ***PLACE THIS BACK WHEN TESTING IS DONE!***
+    // !data && setTimeout(navigate, 21500, ("/"));
   }, [data, navigate]);
 
   return (
