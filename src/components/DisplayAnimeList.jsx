@@ -30,7 +30,7 @@ export default function DisplayAnimeList({ animeList, navigate }) {
               <p className="header">Genres: </p>
               <ul className="genre-list">
                 {item.genres.map((genre, index) => (
-                  <li key={`${index}-${genre}`}>{genre}</li>
+                  <li key={`${item.title}-${index}-${genre}`}>{genre}</li>
                 ))}
               </ul>
               
