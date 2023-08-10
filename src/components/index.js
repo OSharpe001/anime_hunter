@@ -3,3 +3,4 @@ export { default as Footer } from "./Footer";
 export { default as GetAnime } from "./GetAnime";
 export { default as Header } from "./Header";
 export { default as HomePage } from "./HomePage";
+export { default as About } from "./About";

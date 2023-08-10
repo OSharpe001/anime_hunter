@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { fetchFromAPI } from "../utils/fetchFromAPI";
 
 
@@ -7,12 +7,8 @@ export default function GetAnime({ setAnimeList, navigate }) {
     const [title, setTitle] = useState("");
     const [genres, setGenres] = useState([]);
 
-    const [formInfo, setFormInfo] = useState({
-        searchTitle: "",
-        searchGenres: []
-    });
-
     const handleChange = ({ target }) => {
+        console.log("GETANIME'S HANDLECHANGE NAME AND VALUE", target.name, target.value )
         let name = target.name;
         let value = target.value;
         name === "title" && setTitle(value);
@@ -21,24 +17,10 @@ export default function GetAnime({ setAnimeList, navigate }) {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        setFormInfo({
-            ...formInfo,
-            searchTitle: title,
-            searchGenres: [...genres]
-        });
+        fetchFromAPI(`anime?page=1&size=10${genres.length>0 ? `&genres=${genres.slice(0).join(",")}` : ""}&sortBy=ranking&sortOrder=asc${title ? `&search=${title}` : ""}`)
+            .then((data) => { setAnimeList(data) });
         navigate("/bounty");
     };
-
-    useEffect(() => {
-        try {
-            fetchFromAPI(`anime?page=1&size=10${formInfo.searchGenres.length>0 ? `&genres=${formInfo.searchGenres.slice(0).join(",")}` : ""}&sortBy=ranking&sortOrder=asc${formInfo.searchTitle ? `&search=${formInfo.searchTitle}` : ""}`)
-            .then((data) => {
-                setAnimeList(data);
-            });
-        } catch (error) {
-            console.log("An error within the useEffect: ", error);
-        }
-    }, [formInfo, setAnimeList]);
 
   return (
     <section className="search-page">
