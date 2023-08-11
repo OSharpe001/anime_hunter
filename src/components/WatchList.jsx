@@ -1,9 +1,12 @@
-// import React from 'react'
+import Footer from "./Footer";
 
 export default function WatchList() {
   return (
-    <div>
-        <h1>BingoBook</h1>
-    </div>
+    <>
+      <section className="bingo-book">
+          <h1>BingoBook</h1>
+      </section>
+      <Footer />
+    </>
   );
 };

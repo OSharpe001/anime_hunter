@@ -12,3 +12,5 @@ Readmsoon to come... Must include:
 --------------------------ISSUES
 1-problem) Had an issue using Axios to perform my API call, at first.
 1-solution) Had to go over my code to make sure that if I wasn't using an optional parameter, it's key wasn't included in the url for the fetch-call
+2-problem) Having issues with the local storage
+3-problem) had issues with displaying bounty posters on full screen

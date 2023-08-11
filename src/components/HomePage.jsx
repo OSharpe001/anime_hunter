@@ -1,3 +1,5 @@
+import Footer from "./Footer";
+
 
 export default function HomePage({ navigate }) {
 
@@ -6,8 +8,12 @@ export default function HomePage({ navigate }) {
   };
 
   return (
-    <section className="home-page">
+    <>
+      <section className="home-page">
         <button onClick={getStarted}>Begin The Hunt</button>
-    </section>
+      </section>
+      <Footer />
+    </>
+
   );
 };

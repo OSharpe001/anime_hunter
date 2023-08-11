@@ -1,4 +1,4 @@
-// import React from 'react'
+import Footer from "./Footer";
 
 export default function About({ navigate }) {
 
@@ -7,15 +7,30 @@ export default function About({ navigate }) {
     // };
 
     return (
-        <section className="about">
-            <h1>Join the Guild</h1>
-            <p>
-                Welcome to Anime Hunters' HQ!<br/><br/>
-                Feel free to peruse our Bounty Board and add a
-                new bounty to your Bingo-Book.
-            </p>
-
-            {/* <button className="button" onClick={goHome}>Back to Main</button> */}
-        </section>
+        <>
+            <section className="about">
+                <h1>Welcome to Anime Hunters' HQ!</h1>
+                <p>
+                    Feel free to peruse our Bounty Board and add a new bounty to your Bingo-Book.
+                    <br/>
+                    The Beginner's Bounty will bring you to the job board for beginners. Full of
+                    the highest ranking bounties without the fuss of searching.
+                    <br/>
+                    The Bingo Book is where you'll keep note of the bounties that catch your eye.
+                    This your personal book so all of your most savory prey will be kept in a place
+                    you can always refer back to. If after trailing and scouting your prey, you feel
+                    as if they're not worth the time and effort, simply scratch'em off your list!
+                    <br/>
+                    You can also take a closer look at the profile of your prospective prey by
+                    clicking on their poster in the job board and then traveling to the poster page.
+                    Here, you'll be able to study their features, giving you a better chance to find
+                    clues to find their trail.
+                    <br/>
+                    With all of these features, there's no way you'll lose sight of your prey!
+                </p>
+                <h2>Happy Hunting!!</h2>
+            </section>
+            <Footer />
+        </>
     );
 };

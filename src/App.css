@@ -18,8 +18,12 @@ html {
 .character-show-image {
   /* height: 100vh; */
   background-repeat: no-repeat;
+  /* background-size: 98vw; */
   background-size: cover;
+  /* background-size: contain; */
+  /* background-size: contain, cover; */
   background-position: center;
+
 }
 
 button, .button {
@@ -141,7 +145,7 @@ h1 {
   height: max-content;
 }
 .reset-readout {
-  height: 84vh;
+  height: 82vh;
   text-align: center;
   background-color: rgb(253, 238, 220);
 }
@@ -256,18 +260,22 @@ li {
 }
 
 .poster-page {
-  height: 84vh;
+  height: 90vh;
 }
 
 .about {
-  height: 84vh;
+  height: 82vh;
   text-align: center;
   justify-content: center;
 
 }
-.about p {
+.about p, .about h2 {
   /* width: max-content; */
   margin: 0vh auto 20vh;
   padding: 10px 20px;
   background-color: rgba(253, 238, 220, .7);
+}
+
+.bingo-book {
+  height: 82vh;
 }
