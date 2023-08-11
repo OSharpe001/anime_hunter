@@ -1,14 +1,14 @@
-import { useState } from 'react';
+// import { useState } from 'react';
 import { fetchFromAPI } from "../utils/fetchFromAPI";
 
 
-export default function GetAnime({ setAnimeList, navigate }) {
+export default function GetAnime({ setAnimeList, navigate, title, setTitle, genres, setGenres }) {
 
-    const [title, setTitle] = useState("");
-    const [genres, setGenres] = useState([]);
+    // const [title, setTitle] = useState("");
+    // const [genres, setGenres] = useState([]);
 
     const handleChange = ({ target }) => {
-        console.log("GETANIME'S HANDLECHANGE NAME AND VALUE", target.name, target.value )
+        // console.log("GETANIME'S HANDLECHANGE NAME AND VALUE", target.name, target.value);
         let name = target.name;
         let value = target.value;
         name === "title" && setTitle(value);

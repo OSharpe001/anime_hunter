@@ -1,27 +1,54 @@
 * {
   box-sizing: border-box;
 }
+html {
+  
+  background-color: red;
+}
 .App {
   text-align: center;
+  /* height: 100vh; */
+  /* height: 100%; */
   width: 100%;
   margin: 0;
-  /* border: 2px solid red; */
+  border: 2px solid red;
 }
 
 /* BACKGROUND IMAGES CLASS */
 .character-show-image {
+  /* height: 100vh; */
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 
+button, .button {
+  font-size: 14pt;
+  color: black;
+  padding: 3px 8px;
+  width: 16ch;
+  color: blue;
+  text-decoration: none;
+  background-color: aliceblue;
+  border-radius: 16px;
+  box-shadow: -4px 3px 5px black;
+  /* border: 1px solid red; */
+}
+button:hover, .button:hover {
+  text-decoration: underline;
+}
+button:active, .button:active {
+  box-shadow: -1px 1px 5px black;
+}
+
 .home-page {
   height: 82vh;
-  /* background-color: gray; */
 }
-.home-page h1 {
+h1 {
   margin: 0;
   padding: 2vh;
+  background-color: rgba(253, 238, 220, .7);
+  /* border: 2px solid red; */
 }
 .home-page button {
   margin: 30vh auto 0;
@@ -35,10 +62,10 @@
 }
 .data-readout h1 {
   padding: 2vh 2vw;
-  margin: 2vh 0 10vh;
+  /* margin: 2vh 0 10vh; */
   text-align: center;
   text-decoration: underline;
-  border: 2px solid blue;
+  /* border: 2px solid blue; */
 }
 .anime-list {
   margin: 0;
@@ -47,7 +74,7 @@
 }
 .bounty{
   padding: 30px;
-  margin: 3vh 0 7vh;
+  margin: 5vh 0 7vh;
   background-color: rgb(253, 238, 220);
   border: 1px solid black;
 }
@@ -105,6 +132,10 @@
   margin: 30px auto 50px;
   border: 2px solid black;
 }
+.poster-link button {
+  width: max-content;
+  height: max-content;
+}
 .poster-link .button {
   width: max-content;
   height: max-content;
@@ -147,7 +178,7 @@ input {
 }
 header {
   min-height: 8vh;
-  height: 55px;
+  height:max-content;
 }
 header nav {
   display: flex;
@@ -156,6 +187,7 @@ header nav {
   align-items: center;
   margin: 0;
   padding: 0 5px;
+  background-color: rgba(253, 238, 220, .5);
   /* min-height: 8vh;
   height: 55px; */
   /* width: 100vw; */
@@ -172,7 +204,10 @@ header nav {
   padding: 5px 10px;
   /* border: 2px solid blue; */
 }
-.banner h1 {
+.banner p {
+  width: max-content;
+  font-size: 20pt;
+  font-weight: bold;
   padding: 5px 10px;
   margin: 0;
 }
@@ -186,6 +221,16 @@ header nav {
   /*  */
   /* background-color: red; */
 }
+.nav-items {
+  width: 60%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  /* border: 2px solid blue; */
+}
+.nav-items .button {
+  width: max-content;
+}
 
 footer {
   display: flex;
@@ -198,26 +243,31 @@ footer {
   /* position: absolute; */
   /* left: 0; */
   /* bottom:0; */
-  color: aliceblue;
-  background-color: rgb(255, 0, 0);
+  color: black;
+  background-color: rgba(253, 238, 220, .7);
   /* border: 2px solid red; */
 }
-
-button, .button {
-  font-size: 14pt;
-  color: black;
-  padding: 3px 8px;
-  width: 16ch;
-  color: blue;
-  text-decoration: none;
-  background-color: aliceblue;
-  border-radius: 16px;
-  /* border: 1px solid red; */
-}
-button:hover, .button:hover {
-  text-decoration: underline;
+footer p {
+  font-size: 16pt;
 }
 
 li {
   list-style-type: none;
+}
+
+.poster-page {
+  height: 84vh;
+}
+
+.about {
+  height: 84vh;
+  text-align: center;
+  justify-content: center;
+
+}
+.about p {
+  /* width: max-content; */
+  margin: 0vh auto 20vh;
+  padding: 10px 20px;
+  background-color: rgba(253, 238, 220, .7);
 }
