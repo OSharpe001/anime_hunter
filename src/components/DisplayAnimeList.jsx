@@ -1,9 +1,14 @@
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
 
-export default function DisplayAnimeList({ animeList, navigate }) {
+export default function DisplayAnimeList({ animeList, navigate, title, genres, setCurrentBackground }) {
 
   const data = animeList.data;
+
+  const setNewPoster = (({ target }) => {
+    console.log("DISPLAYANIMELIST'S SETNEWPOSTER E.TARGET", target.src);
+    setCurrentBackground(target.src);
+  });
 
   useEffect(() => {
     !data && setTimeout(navigate, 1500, ("/")); // ***PLACE THIS BACK WHEN TESTING IS DONE!***
@@ -12,7 +17,7 @@ export default function DisplayAnimeList({ animeList, navigate }) {
 
   return (
     <section className="data-readout">
-        <h1>The Bounty</h1>
+        <h1>{title || genres.length > 0 ? "The Bounty" : "Beginner's Bounty"}</h1>
         {data ?
           <ul className="anime-list">
           {data.map(item => (
@@ -45,7 +50,9 @@ export default function DisplayAnimeList({ animeList, navigate }) {
               </ul>
 
               <div className="poster-link">
-                <img src={item.image} alt="poster" />
+                <button onClick={e => setNewPoster(e)}>
+                  <img src={item.image} alt="poster" />
+                </button>
                 <Link className="nav-item button" target="_blank" aria-label="On Click" to={item.link} >Find on myanimelist.net</Link>
               </div>
               
