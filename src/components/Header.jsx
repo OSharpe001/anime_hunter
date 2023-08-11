@@ -22,6 +22,7 @@ export default function Header({ navigate, preserveImage, setPreserveImage }) {
           <Link aria-label="On Click" to="/guild" className="nav-item button">About</Link>
           <Link aria-label="On Click" to="/bounty" className="nav-item button">Beginner's Bounty</Link>
           <Link aria-label="On Click" onClick={saveImage} to="/art" className="nav-item button">Check Poster</Link>
+          <Link aria-label="On Click" onClick={saveImage} to="/bingo-book" className="nav-item button">Bingo Book</Link>
         </div>
       </nav>
     </header>
