@@ -14,6 +14,5 @@ export default function HomePage({ navigate }) {
       </section>
       <Footer />
     </>
-
   );
 };
