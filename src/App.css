@@ -2,26 +2,19 @@
   box-sizing: border-box;
 }
 html {
-  
   background-color: red;
 }
 .App {
   text-align: center;
-  /* height: 100vh; */
-  /* height: 100%; */
-  width: 100%;
   margin: 0;
-  border: 2px solid red;
+  background-color: rgb(253, 238, 220);
+  border: 1px solid black;
 }
 
 /* BACKGROUND IMAGES CLASS */
 .character-show-image {
-  /* height: 100vh; */
   background-repeat: no-repeat;
-  /* background-size: 98vw; */
-  background-size: cover;
-  /* background-size: contain; */
-  /* background-size: contain, cover; */
+  background-size: contain, cover;
   background-position: center;
 
 }
@@ -66,7 +59,6 @@ h1 {
 }
 .data-readout h1 {
   padding: 2vh 2vw;
-  /* margin: 2vh 0 10vh; */
   text-align: center;
   text-decoration: underline;
   /* border: 2px solid blue; */
@@ -79,14 +71,12 @@ h1 {
 .bounty{
   padding: 30px;
   margin: 5vh 0 7vh;
-  background-color: rgb(253, 238, 220);
+  background-color: rgb(233, 214, 190);
   border: 1px solid black;
 }
 .data-readout h2 {
-  /* display: inline; */
-  /* width: min-content; */
-  /* border: 2px solid red; */
   text-decoration: underline;
+  /* border: 2px solid red; */
 }
 .data-readout p {
   font-size: 16pt;
@@ -108,16 +98,13 @@ h1 {
   justify-content: space-around;
 }
 .title-thumbnail .title {
-  /* flex: 50%; */
-  /* display: inline; */
   width: fit-content;
   padding-left: 20px;
   justify-content: center;
 }
 .title-thumbnail img {
-  /* flex: 25%; */
-  /* width: 5vw; */
   justify-content: left;
+  box-shadow: -2px 2px 4px black;
   border: 2px solid aliceblue;
 }
 .genre-list li, .alias-list li {
@@ -147,7 +134,12 @@ h1 {
 .reset-readout {
   height: 82vh;
   text-align: center;
-  background-color: rgb(253, 238, 220);
+  background-color: rgba(253, 238, 220, .7);
+  border: 1px solid red;
+}
+.reset-readout h1 {
+  margin-top: 40vh;
+  background: transparent;
 }
 
 .search-page {
@@ -155,8 +147,7 @@ h1 {
   justify-content: center;
   justify-items: center;
   height: 82vh;
-  /* margin: ?????; */
-  border: 2px solid green;
+  /* border: 2px solid green; */
 }
 
 .search-page button {
@@ -169,16 +160,25 @@ h1 {
   font-size: 20pt;
 }
 
-label {
+.search-page label {
   font-size: 16pt;
   display: block;
+  padding: 2px 10px 0;
   margin: 20px auto 5px;
+  width: max-content;
+  /* background-color: rgba(253, 238, 220, .5); */
+  text-decoration: underline;
+  background-color: rgba(253, 238, 220, .7);
+  border-radius: 16px;
 }
 
-input {
+.search-page input {
   font-size: 16pt;
   display: block;
   margin: 10px auto 30px;
+  /* color: black; */
+  /* background-color: rgba(253, 238, 220, .7); */
+  text-align: center;
 }
 header {
   min-height: 8vh;
@@ -191,14 +191,7 @@ header nav {
   align-items: center;
   margin: 0;
   padding: 0 5px;
-  background-color: rgba(253, 238, 220, .5);
-  /* min-height: 8vh;
-  height: 55px; */
-  /* width: 100vw; */
-  /* position: absolute; */
-  /* top: 0; */
-  /* left: 0; */
-  /* border: 2px solid red; */
+  background-color: rgba(253, 238, 220, .7);
 }
 .banner {
   display: flex;
@@ -216,14 +209,11 @@ header nav {
   margin: 0;
 }
 .logo {
-  /* padding: 5px 10px; */
   padding: 0;
   margin: 0px 10px;
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  /*  */
-  /* background-color: red; */
 }
 .nav-items {
   width: 60%;
@@ -244,9 +234,6 @@ footer {
   width: 100%;
   min-height: 8vh;
   height: 55px;
-  /* position: absolute; */
-  /* left: 0; */
-  /* bottom:0; */
   color: black;
   background-color: rgba(253, 238, 220, .7);
   /* border: 2px solid red; */
@@ -264,14 +251,19 @@ li {
 }
 
 .about {
+  font-size: 16pt;
   height: 82vh;
   text-align: center;
   justify-content: center;
-
 }
-.about p, .about h2 {
-  /* width: max-content; */
-  margin: 0vh auto 20vh;
+.about h1 {
+  text-decoration: underline;
+}
+.about p {
+  padding: 10px 20px;
+  background-color: rgba(253, 238, 220, .9);
+}
+.about h2 {
   padding: 10px 20px;
   background-color: rgba(253, 238, 220, .7);
 }
