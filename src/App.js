@@ -42,9 +42,12 @@ export default function App() {
     };
   };
 
+  // NEED TO CREATE A MODIFICATION FUNCTION (TO SCRATCH NAME OFF IN BINGO BOOK) AND ERASE-FROM-WATCHLIST FUNCTION
+  // MAY HAVE TO PUT EACH TITLE IN AN OBJECT TO HAVE AN "ACTIVE" KEY WITH A BOOLEAN VALUE...
+  
   storeWatchList("Naruto");
   storeWatchList("Bleach");
-  storeWatchList("One Peice");
+  storeWatchList("One Piece");
   console.log(viewWatchList());
   // ***************************
 
@@ -65,38 +68,40 @@ export default function App() {
   // };
 
   return (
-    <div className={`App ${currentBackground.class}`} style={{backgroundImage: `url("${currentBackground.image}")`}}>
-      <Header
-          preserveImage={preserveImage}
-          setPreserveImage={setPreserveImage}
-          navigate={navigate}
-          />
-        <Routes>
-              <Route path="/" element={<HomePage navigate={navigate} />} />
-              <Route path="/hunt" element={<GetAnime
-                                              title={title}
-                                              setTitle={setTitle}
-                                              genres={genres}
-                                              setGenres={setGenres}
-                                              setAnimeList={setAnimeList}
-                                              navigate={navigate}
-                                            />} />
-              <Route path="/bounty" element={<DisplayAnimeList
-                                                animeList={animeList}
+    <div className='App'>
+      <div className={currentBackground.class} style={{backgroundImage: `url("${currentBackground.image}")`}}>
+        <Header
+            preserveImage={preserveImage}
+            setPreserveImage={setPreserveImage}
+            navigate={navigate}
+            />
+          <Routes>
+                <Route path="/" element={<HomePage navigate={navigate} />} />
+                <Route path="/hunt" element={<GetAnime
                                                 title={title}
+                                                setTitle={setTitle}
                                                 genres={genres}
-                                                navigate={navigate}
-                                                setCurrentBackground={setCurrentBackground}
-                                                watchList={watchList}
-                                                setWatchList={setWatchList}
-                                              />} />
-              <Route path="/guild" element={<About
+                                                setGenres={setGenres}
+                                                setAnimeList={setAnimeList}
                                                 navigate={navigate}
                                               />} />
-              <Route path="/art" element={<PosterPage />} />
-              <Route path="/bingo-book" element={<WatchList />} />
-        </Routes>
-        {/* <button onClick={toggleImageLock}>{preserveImage ? "Unlock Image" : "Lock Image"}</button> */}
+                <Route path="/bounty" element={<DisplayAnimeList
+                                                  animeList={animeList}
+                                                  title={title}
+                                                  genres={genres}
+                                                  navigate={navigate}
+                                                  setCurrentBackground={setCurrentBackground}
+                                                  watchList={watchList}
+                                                  setWatchList={setWatchList}
+                                                />} />
+                <Route path="/guild" element={<About
+                                                  navigate={navigate}
+                                                />} />
+                <Route path="/art" element={<PosterPage />} />
+                <Route path="/bingo-book" element={<WatchList />} />
+          </Routes>
+          {/* <button onClick={toggleImageLock}>{preserveImage ? "Unlock Image" : "Lock Image"}</button> */}
+      </div>
     </div>
   );
 };
