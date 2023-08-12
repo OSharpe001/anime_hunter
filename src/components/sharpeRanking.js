@@ -163,9 +163,249 @@ export const sharpRanking = [
         notes: ""
     },
     {
+        englishName: "Reborn to Master the Blade: From Hero-King to Extraordinary Squire",
+        asianName: "Eiyuuou, Bu wo Kiwameru Tame Tenseisu: scryRenderedComponentsWithType, Sekai Saikyou no Minarai Kishi",
+        rank: "1/2👎🏾",
+        notes: ""
+    },
+    {
         englishName: "",
+        asianName: "Shoujo Shuumatsu Ryokou",
+        rank: "1/2👎🏾",
+        notes: ""
+    },
+    {
+        englishName: "",
+        asianName: "Shuumatsu no Harem",
+        rank: "",
+        notes: ""
+    },
+    {
+        englishName: "The Fruit of Evolution: Before I Knew It, My Life Had It Made",
+        asianName: "Shinka no Mi: Shiranai Uchi Ni Kachigumi Jinsei",
+        rank: "👎🏾👎🏾",
+        notes: ""
+    },
+    {
+        englishName: "",
+        asianName: "Kaiko sareta Ankoku Heishi (30-dai) no Slow na Second Life",
+        rank: "👍🏾",
+        notes: ""
+    },
+    {
+        englishName: "",
+        asianName: "Inspectre",
+        rank: "1/2👍🏾",
+        notes: ""
+    },
+    {
+        englishName: "Blue Lock",
+        asianName: "",
+        rank: "👍🏾",
+        notes: "(first season)"
+    },
+    {
+        englishName: "",
+        asianName: "Watashi, Nouryoki we Heikinchi de tte Itta yo ne!",
+        rank: "👎🏾",
+        notes: ""
+    },
+    {
+        englishName: "Immoral Guild",
+        asianName: "Futaku no Guild",
+        rank: "",
+        notes: ""
+    },
+    {
+        englishName: "Radiant",
+        asianName: "",
+        rank: "👎🏾",
+        notes: ""
+    },
+    {
+        englishName: "The Hidden Dungeon Only I Can Enter",
+        asianName: "",
+        rank: "👎🏾",
+        notes: "weird incest theme in first half of series"
+    },
+    {
+        englishName: "I Somehow Got Strong By Raising Skills Related To Farming",
+        asianName: "Nouman Kanren no Skill bakka Agetetara Nazeka Tsuyoku Natta",
+        rank: "👎🏾",
+        notes: ""
+    },
+    {
+        englishName: "The Eminence in Shadow",
+        asianName: "Kage no Jitsuryokusha ni Naritakute!",
+        rank: "👍🏾",
+        notes: ""
+    },
+    {
+        englishName: "Mob psycho 100",
+        asianName: "",
+        rank: "**👍🏾",
+        notes: ""
+    },
+    {
+        englishName: "",
+        asianName: "Shinobi no Ittoki",
+        rank: "👎🏾",
+        notes: ""
+    },
+    {
+        englishName: "My Hero Academia",
+        asianName: "",
+        rank: "**👍🏾",
+        notes: "(6th season)"
+    },
+    {
+        englishName: "",
+        asianName: "Tensei Shitara Ken Deshita",
+        rank: "👍🏾👍🏾",
+        notes: ""
+    },
+    {
+        englishName: "",
+        asianName: "Aku no Hana",
+        rank: "👎🏾👎🏾",
+        notes: "LAME!!"
+    },
+    {
+        englishName: "War God System! I'm Counting On You!",
+        asianName: "Kao Ni La Zhanshen Xitong",
+        rank: "👍🏾👍🏾",
+        notes: "16 episodes (first season)"
+    },
+    {
+        englishName: "Memories",
+        asianName: "",
+        rank: "👎🏾",
+        notes: ""
+    },
+    {
+        englishName: "Rent a Girlfriend",
+        asianName: "Kanojo, Okarishimasu",
+        rank: "👍🏾👍🏾",
+        notes: ""
+    },
+    {
+        englishName: "Overlord",
+        asianName: "",
+        rank: "***👍🏾👍🏾",
+        notes: "(4th season)"
+    },
+    {
+        englishName: "",
+        asianName: "Kinsou no Vermeil",
+        rank: "1/2👍🏾",
+        notes: "a little ecchi"
+    },
+    {
+        englishName: "Black Summoner",
+        asianName: "Kuro no Shoukanshi",
+        rank: "*👍🏾👍🏾",
+        notes: ""
+    },
+    {
+        englishName: "Isekai Uncle",
+        asianName: "Isekai Ojisan",
+        rank: "",
+        notes: ""
+    },
+    {
+        englishName: "World Labyrinth",
+        asianName: "Isekai Meikyuu de Harem wo",
+        rank: "*👍🏾👍🏾",
+        notes: "ecchi"
+    },
+    {
+        englishName: "My Isekai Life",
+        asianName: "Tensei Kenja no Isekai Life",
+        rank: "1/2👍🏾",
+        notes: ""
+    },
+    {
+        englishName: "Summer Time Rendering",
+        asianName: "",
+        rank: "*👍🏾👍🏾",
+        notes: ""
+    },
+    {
+        englishName: "Made in Abyss",
+        asianName: "",
+        rank: "👍🏾👍🏾",
+        notes: "third season is unnecessarily cryptic"
+    },
+    {
+        englishName: "Darker Than Black",
         asianName: "",
         rank: "",
+        notes: "second season was idiotic"
+    },
+    {
+        englishName: "Bastard",
+        asianName: "",
+        rank: "👎🏾",
+        notes: "corny. Made for horny pre-teens"
+    },
+    {
+        englishName: "No Game No Life",
+        asianName: "",
+        rank: "👎🏾",
+        notes: "good starting premise but turned a little lame"
+    },
+    {
+        englishName: "No Game No Life Movie",
+        asianName: "",
+        rank: "",
+        notes: "better than the series"
+    },
+    {
+        englishName: "Spare Me, Great Lord",
+        asianName: "Da Wang Rao Ming",
+        rank: "***👍🏾",
+        notes: ""
+    },
+    {
+        englishName: "",
+        asianName: "Quanzhi Gaoshou",
+        rank: "👍🏾",
+        notes: ""
+    },
+    {
+        englishName: "",
+        asianName: "Quanzhi Fashi",
+        rank: "👍🏾",
+        notes: ""
+    },
+    {
+        englishName: "Full Time Magister",
+        asianName: "",
+        rank: "👍🏾",
+        notes: ""
+    },
+    {
+        englishName: "Wise Man's Grandchild",
+        asianName: "",
+        rank: "👍🏾",
+        notes: ""
+    },
+    {
+        englishName: "Prison School",
+        asianName: "",
+        rank: "*👍🏾👍🏾",
+        notes: "ecchi"
+    },
+    {
+        englishName: "",
+        asianName: "Arifureta",
+        rank: "👍🏾",
+        notes: ""
+    },
+    {
+        englishName: "",
+        asianName: "Sekai Saikou no Ansatsusha, Isekai Kizoku ni Tensei Suru",
+        rank: "👍🏾",
         notes: ""
     },
     {
@@ -174,54 +414,7 @@ export const sharpRanking = [
         rank: "",
         notes: ""
     },
-    {
-        englishName: "",
-        asianName: "",
-        rank: "",
-        notes: ""
-    },
-    -Eiyuuou, Bu wo Kiwameru Tame Tenseisu…(Reborn to Master the Blade…)1/2👎🏾-
-    -Shoujo Shuumatsu Ryokou 1/2👎🏾-
-    -Shuumatsu no Harem-
-    -The Fruit of Evolution: Before I Knew it, my life had it made (Shinka no Mi: Shiranai Uchi Ni Kachigumi Jinsei) 👎🏾👎🏾-
-    -Kaiko sareta Ankoku Heishi (30-dai) no Slow na Second Life 👍🏾-
-    -Inspectre (eh. .1/2👍🏾)•
-    -Blue Lock 👍🏾(first season)-
-    -Watashi, Nouryoki we Heikinchi de tte Itta yo ne! 👎🏾-
-    -Futaku no Guild (Immoral Guild)-
-    -Radiant 👎🏾-
-    -The Hidden Dungeon Only I Can Enter (weird incest theme in first half of series)👎🏾-
-    -Nouman Kanren no Skill bakka Agetetara Nazeka Tsuyoku Natta (I Somehow Got Strong By Raising Skills Related To Farming)👎🏾-
-    -The Eminence in Shadow (Kage no Jitsuryokusha ni Naritakute!)👍🏾-
-    -Mob psycho 100**👍🏾-
-    -Shinobi no Ittoki👎🏾-
-    -My hero academia (6th season)**👍🏾•
-    -Tensei Shitara Ken Deshita👍🏾👍🏾-
-    - Aku no Hana(LAME AS FUCK!!)👎🏾👎🏾-
-    -Kao Ni La Zhanshen Xitong (War God System! I'm Counting On You!)(first season 16ep.)👍🏾👍🏾-
-    -Memories👎🏾-
-    -Kanojo, Okarishimasu (Rent a Girlfriend)👍🏾👍🏾-
-    -Overlord***👍🏾👍🏾(4th season)-
-    -Kinsou no Vermeil(a little echi)1/2👍🏾-
-    -Black Summoner (Kuro no Shoukanshi)*👍🏾👍🏾-
-    -Isekai Uncle(Isekai Ojisan)-
-    World Labyrinth (Isekai Meikyuu de Harem wo)(echi)*👍🏾👍🏾-
-    -My Isekai Life(Tensei Kenja no Isekai Life)1/2👍🏾-
-    -Summer Time Rendering *👍🏾👍🏾-
-    -Made in Abyss👍🏾👍🏾(3rd season unnecessarily cryptic)-
-    -Darker Than Black(2nd season was stupid)-
-    -Bastard (corny. Made for horny teens)👎🏾-
-    -No Game No Life (good starting premise but turned a little lame)👎🏾-
-    -No Game No Life Movie (better than series)-
-    -Da Wang Rao Ming(Spare Me, Great Lord)👍🏾👍🏾👍🏾***
-    -Quanzhi Gaoshou👍🏾-
-    -Quanzhi Fashi👍🏾-
-    -Full Time Magister👍🏾-
-    -Wise Man's Grandchild 👍🏾-
-    -Prison School*👍🏾👍🏾-
-    -Mo dao zu shi
-    -Arifureta 👍🏾-
-    -Sekai saikou no ansatsusha, isekai kizoku ni tensei Suru 👍🏾-
+    
     -Btoom 1/2👍🏾-
     -Isekai kizoku ni tensei Suru👍🏾-
     -Platinum End (same creator as Death Note)-
@@ -399,12 +592,7 @@ export const sharpRanking = [
     - Omiai Aite wa Oshiego👎🏾-
     -Punchline (*watch it again*)
 
-    {
-        englishName: "",
-        asianName: "",
-        rank: "",
-        notes: ""
-    },
+    
     {
         englishName: "Date Alive",
         asianName: "",
@@ -416,6 +604,12 @@ export const sharpRanking = [
         asianName: "",
         rank:"👎🏾👎🏾",
         notes: "amazing visuals, lamest story ever!"
-    }
+    },
+    {
+        englishName: "",
+        asianName: "",
+        rank: "",
+        notes: ""
+    },
     
 ];
