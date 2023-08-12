@@ -11,9 +11,5 @@ const options = {
 
 export const fetchFromAPI = async (url) => {
   const { data } = await axios.get(`${BASE_URL}/${url}`, options);
-
-  // *** REMEMBER TO ERASE AFTER TESTING IS COMPLETE!! ***
-  // console.log("FETCHFROMAPI'S FETCH CALL URL: ", `${BASE_URL}/${url}`, options);
-
   return data;
 };

@@ -1,6 +1,8 @@
 import Footer from "./Footer";
 
+
 export default function WatchList() {
+
   return (
     <>
       <section className="bingo-book">
