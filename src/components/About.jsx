@@ -1,10 +1,6 @@
 import Footer from "./Footer";
 
-export default function About({ navigate }) {
-
-    // const goHome = () => {
-    //     navigate("/");
-    // };
+export default function About() {
 
     return (
         <>
@@ -18,13 +14,14 @@ export default function About({ navigate }) {
                     <br/>
                     The Bingo Book is where you'll keep note of the bounties that catch your eye.
                     This your personal book so all of your most savory prey will be kept in a place
-                    you can always refer back to. If after trailing and scouting your prey, you feel
-                    as if they're not worth the time and effort, simply scratch'em off your list!
+                    you can always refer back to. After completing a bounty (watching your anime),
+                    simply scratch'em off your list. If after trailing and scouting your prey, you
+                    feel as if they're not worth the time and effort, you can erase them completely!
                     <br/>
                     You can also take a closer look at the profile of your prospective prey by
                     clicking on their poster in the job board and then traveling to the poster page.
                     Here, you'll be able to study their features, giving you a better chance to find
-                    clues to find their trail.
+                    clues and sniff-out their trail...
                     <br/>
                     With all of these features, there's no way you'll lose sight of your prey!
                 </p>
