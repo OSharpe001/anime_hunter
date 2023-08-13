@@ -3,9 +3,10 @@ import { Link } from "react-router-dom";
 import Footer from "./Footer";
 
 
-export default function DisplayAnimeList({ animeList, navigate, title, genres, setCurrentBackground }) {
+export default function DisplayAnimeList({ animeList, navigate, title, genres, currentBackground, setCurrentBackground, viewWatchList, storeInWatchList, eraseWatchListItem }) {
 
   const data = animeList.data;
+  const currentWatchList = viewWatchList()
 
   const setNewPoster = (({ target }) => {
     setCurrentBackground({class: "character-show-image", image: target.src, alt: "background fan art"});
@@ -14,6 +15,8 @@ export default function DisplayAnimeList({ animeList, navigate, title, genres, s
   useEffect(() => {
     !data && setTimeout(navigate, 1500, ("/"));
   }, [data, navigate]);
+
+  // console.log("DISPLAYANIMELIST'S CURRENTBACKGROUND.SRC: ", currentBackground.image);
 
   return (
     <>
@@ -55,7 +58,15 @@ export default function DisplayAnimeList({ animeList, navigate, title, genres, s
                     <button onClick={e => setNewPoster(e)}>
                       <img src={item.image} alt="poster" />
                     </button>
-                    <Link className="nav-item button" target="_blank" aria-label="On Click" to={item.link} >Find on myanimelist.net</Link>
+                    <div className="bountys-buttons">
+                      
+                      <button onClick={() => !currentWatchList || currentWatchList.filter(obj => obj.name === item.title).length === 0 ? storeInWatchList(item.title) : eraseWatchListItem(item.title)}>
+                        {!currentWatchList || currentWatchList.filter(obj => obj.name === item.title).length === 0 ? "Add to Bingo Book" : "Remove From Bingo Book"}
+                      </button>
+                      <Link aria-label="On Click" to="/art" className={currentBackground.src === item.image ? "nav-item button" : "hidden"}>Go To Poster Page</Link>
+                      <Link className="nav-item button" target="_blank" aria-label="On Click" to={item.link} >Find on myanimelist.net</Link>
+                    </div>
+                    
                   </div>
                   
                 </li>
