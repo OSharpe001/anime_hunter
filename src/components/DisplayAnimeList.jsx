@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import Footer from "./Footer";
 
@@ -6,7 +6,19 @@ import Footer from "./Footer";
 export default function DisplayAnimeList({ animeList, navigate, title, genres, currentBackground, setCurrentBackground, viewWatchList, storeInWatchList, eraseWatchListItem }) {
 
   const data = animeList.data;
-  const currentWatchList = viewWatchList()
+  const currentWatchList = viewWatchList();
+
+  const [latestInterest, setLatestInterest] = useState("");
+
+  const addToWatchList = (title) => {
+    setLatestInterest(title);
+    storeInWatchList(title);
+  };
+
+  const eraseFromWatchList = (title) => {
+    setLatestInterest(title);
+    eraseWatchListItem(title);
+  };
 
   const setNewPoster = (({ target }) => {
     setCurrentBackground({class: "character-show-image", image: target.src, alt: "background fan art"});
@@ -15,6 +27,8 @@ export default function DisplayAnimeList({ animeList, navigate, title, genres, c
   useEffect(() => {
     !data && setTimeout(navigate, 1500, ("/"));
   }, [data, navigate]);
+
+  // console.log("CURRENTBACKGROUND: ", currentBackground)
 
   // console.log("DISPLAYANIMELIST'S CURRENTBACKGROUND.SRC: ", currentBackground.image);
 
@@ -60,11 +74,13 @@ export default function DisplayAnimeList({ animeList, navigate, title, genres, c
                     </button>
                     <div className="bountys-buttons">
                       
-                      <button onClick={() => !currentWatchList || currentWatchList.filter(obj => obj.name === item.title).length === 0 ? storeInWatchList(item.title) : eraseWatchListItem(item.title)}>
+                      {/* <button onClick={() => !currentWatchList || currentWatchList.filter(obj => obj.name === item.title).length === 0 ? storeInWatchList(item.title) : eraseWatchListItem(item.title)}> */}
+                      <button className="button" onClick={() => !currentWatchList || currentWatchList.filter(obj => obj.name === item.title).length === 0 ? addToWatchList(item.title) : eraseFromWatchList(item.title)}>
+                      {/* <button onClick={setLatestInterest(item.title)}> */}
                         {!currentWatchList || currentWatchList.filter(obj => obj.name === item.title).length === 0 ? "Add to Bingo Book" : "Remove From Bingo Book"}
                       </button>
-                      <Link aria-label="On Click" to="/art" className={currentBackground.src === item.image ? "nav-item button" : "hidden"}>Go To Poster Page</Link>
-                      <Link className="nav-item button" target="_blank" aria-label="On Click" to={item.link} >Find on myanimelist.net</Link>
+                      <Link aria-label="On Click" to="/art" hidden={currentBackground.image !== item.image} className="button">Go To Poster Page</Link>
+                      <Link className="button" target="_blank" aria-label="On Click" to={item.link} >Find on myanimelist.net</Link>
                     </div>
                     
                   </div>
