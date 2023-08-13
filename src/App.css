@@ -123,11 +123,7 @@ h1 {
   margin: 30px auto 50px;
   border: 2px solid black;
 }
-.poster-link button {
-  width: max-content;
-  height: max-content;
-}
-.poster-link .button {
+.poster-link button, .poster-link .button {
   width: max-content;
   height: max-content;
 }
@@ -268,6 +264,41 @@ li {
   background-color: rgba(253, 238, 220, .7);
 }
 
-.bingo-book {
+.watch-list {
   height: 82vh;
+}
+
+.bingo-book {
+  background-color: aliceblue;
+  border: 2px solid red;
+}
+
+.bountys-buttons {
+  display: flex;
+  flex-direction: column;
+}
+
+.bountys-buttons button, .bountys-buttons .button {
+  /* font-size: 16pt; */
+  text-align: center;
+  margin: 10px auto;
+  width: 29ch;
+  border: 2px solid red;
+}
+
+.bingo-book-entry {
+  display: flex;
+  flex-direction: row;
+}
+.crossed {
+  text-decoration: line-through;
+}
+.eraser-button {
+width: max-content;
+margin: auto 0 auto 10px;
+}
+.eraser-x {
+  width: 20px;
+  padding: 1px;
+  margin: 0;
 }
