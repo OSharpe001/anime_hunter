@@ -27,14 +27,26 @@ export default function WatchList({ viewWatchList, toggleWatchListItem, eraseWat
       <section className="watch-list">
           <h1>BingoBook</h1>
           <div className="bingo-book">
-            {watchList.map(title =>
-              <div key={title.name}className="bingo-book-entry">
-                <p  onClick={() => setScratchTitle(title.name)} className={title.active ? "" : "crossed"}>{title.name}</p>
-                <button className="eraser-button" onClick={() => setEraseTitle(title.name)}>
-                  <img className="eraser-x" src={close} alt="an x" />
-                </button>
-              </div>
-              )}
+            {
+              !watchList ?
+                <div>
+                  <h2>Bingo Book is currently empty</h2>
+                </div>
+              :
+                watchList.length > 0 ?
+                  watchList.map(title =>
+                    <div key={title.name}className="bingo-book-entry">
+                      <p  onClick={() => setScratchTitle(title.name)} className={title.active ? "" : "crossed"}>{title.name}</p>
+                      <button className="eraser-button" onClick={() => setEraseTitle(title.name)}>
+                        <img className="eraser-x" src={close} alt="an x" />
+                      </button>
+                    </div>
+                  )
+                :
+                  <div>
+                    <h2>Bingo Book is currently empty</h2>
+                  </div>
+            }
           </div>
       </section>
       <Footer />
