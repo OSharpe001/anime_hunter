@@ -15,6 +15,7 @@ export default function App() {
 
   const [currentBackground, setCurrentBackground] = useState(!preserveImage && images[Math.floor(Math.random() * images.length)]);
 
+  const changeImage = () => (setCurrentBackground(images[Math.floor(Math.random() * images.length)]));
 
   const navigate = useNavigate();
 
@@ -74,7 +75,7 @@ export default function App() {
   // eraseWatchListItem("Naruto");
   // eraseWatchListItem("Bleach");
   console.log("APP.JS' VIEWWATCHLIST: ", viewWatchList());
-  console.log("APP.JS' TEST FOR CURRENT PAGE: ", useLocation());
+  // console.log("APP.JS' TEST FOR CURRENT PAGE: ", useLocation());
   // ***************************
 
   // ***NECESSARY! REMEMBER TO UNCOMMENT WHEN TESTING IS COMPLETE!***
@@ -100,6 +101,7 @@ export default function App() {
             preserveImage={preserveImage}
             setPreserveImage={setPreserveImage}
             navigate={navigate}
+            changeImage={changeImage}
             />
           <Routes>
                 <Route path="/" element={<HomePage navigate={navigate} />} />
