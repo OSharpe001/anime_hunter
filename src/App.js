@@ -10,13 +10,16 @@ export default function App() {
 
   const [title, setTitle] = useState("");
   const [genres, setGenres] = useState([]);
-  const [preserveImage, setPreserveImage] = useState(false);
   // const [watchList, setWatchList] = useState([]);
 
+  // SET UP A USESTATE TO STOP IMAGE FROM CHANGING WHEN GOING TO THE POSTER PAGE
+  const [preserveImage, setPreserveImage] = useState(false);
   const [currentBackground, setCurrentBackground] = useState(!preserveImage && images[Math.floor(Math.random() * images.length)]);
 
+  // SET UP A USESTATE TO CHANGE IMAGE ONCE ON THE POSTER PAGE
   const changeImage = () => (setCurrentBackground(images[Math.floor(Math.random() * images.length)]));
 
+  // A LOT OF PAGES NEED TO USE USENAVIGATE SO I DECLARED IT ONCE AND PASSED IT DOWN AS PROPS
   const navigate = useNavigate();
 
   const [animeList, setAnimeList] = useState([]);
