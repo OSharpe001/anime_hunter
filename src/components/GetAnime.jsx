@@ -15,7 +15,7 @@ export default function GetAnime({ setAnimeList, navigate, title, setTitle, genr
         e.preventDefault();
         fetchFromAPI(`anime?page=1&size=10${genres.length>0 ? `&genres=${genres.slice(0).join(",")}` : ""}&sortBy=ranking&sortOrder=asc${title ? `&search=${title}` : ""}`)
             .then((data) => { setAnimeList(data) })
-        setTimeout(navigate, 1000, "/bounty");
+        setTimeout(navigate, 1500, "/bounty");
     };
 
   return (
