@@ -18,7 +18,14 @@ html {
   background-position: center;
 
 }
-
+/* .nav-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  animation-duration: .3s;
+  animation-timing-function: ease-in-out;
+} */
 button, .button {
   font-size: 14pt;
   color: black;
