@@ -13,7 +13,7 @@ export default function About() {
                     The Bounty Board is already pre-loaded for beginners with the highest ranking
                     bounties without the fuss of using the search form.
                     <br/>
-                    You can get more specific bounties when you "Begin The Hunt" and enter titles
+                    You can get more specific bounties when you "Begin The Hunt" and enter a title
                     or genres into the search form.
                     <br/>
                     The Bingo Book is where you'll keep note of the bounties that catch your eye.
