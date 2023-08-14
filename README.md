@@ -25,7 +25,7 @@
 - CSS: Used to apply styling to the web page document.
 - **HONORABLE MENTIONS**
 - React's useLocation: Used to get the path of the current page shown in the browser.
--JavaScript's "window" reference: Used to get info about what's happening in the browser's current window (like mouse location).
+- JavaScript's "window" reference: Used to get info about what's happening in the browser's current window (like mouse location).
 
 ---
 
@@ -48,7 +48,7 @@
 
 ## Approach Taken:
 
-**I decided to split this app into multiple pages since there will be a lot of information to be displayed, once a search is executed. Also because there will be items that would take a decent amount of screen space on a page, (like the watchlist and the About Page's introduction text). Shortly after making multiple pages, I figured I should make one that is mostly blank to show off the fan-art (background images) I found on the internet. After implementing that, I thought it would be nice to also see the posters that are returned from a particular search item, as well. I then turned the poster display into a button that would set that poster as the background image so that it may be viewed on the "Poster Page".**
+**I decided to split this app into multiple pages since there will be a lot of information to be displayed, once a search is executed. Also because there will be items that would take a decent amount of screen space on a page, (like the watchlist and the About page's introduction text). Shortly after making multiple pages, I figured I should make one that is mostly blank to show off the fan-art (background images) I found on the internet. After implementing that, I thought it would be nice to also see the posters that are returned from a particular search item, as well. I then turned the poster display into a button that would set that poster as the background image so that it may be viewed on the "Poster Page".**
 **Since this is an app to find new anime, I decided to make a watch-list page ("Bingo Book") to save any particular titles the user may fancy. That being the case, I knew I would have to use local storage so that their saved titles would still be there when they return.**
 
 ---
@@ -59,7 +59,7 @@
 
 2. As a new user, I expect their to be a page that will give me a quick rundown of the app's features and how to use the less-intuitive ones (if any).
 
-3. As a user, after reading the "About" page, I expect to instantly see a list of anime after pressing the "Beginner's Bounty" button without having to manually type in search terms.
+3. As a user, after reading the "About" page, I expect to instantly see a list of anime after pressing the "Bounty Board" button without having to manually type in search terms.
 
 4. As a user, I expect to be brought to a more specific list of anime after I type in search terms on the "hunt" page and submit.
 
@@ -85,8 +85,8 @@
 
 2. **Add my personal rating to "Bounty" (search) items.**
 
-8. **Create "Bingo Book" with buttons and turn-page animations.**
+8. **Create "Bingo Book" (that actually looks like a book) with buttons and turn-page animations.**
 
 10. **Change fonts on particular elements (like on the "bounty sheets").**
 
-11. **Get a lot more clear big-size fan art for random backgrounds.**
+11. **Get a lot more clear, big-size fan art for random backgrounds.**
