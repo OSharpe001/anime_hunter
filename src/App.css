@@ -3,12 +3,15 @@
 font-family: 'Island Moments', cursive;
 font-family: 'Romanesco', cursive; */
 
+/* GENERAL STYLES */
 * {
   box-sizing: border-box;
 }
+
 html {
   background-color: red;
 }
+
 .App {
   text-align: center;
   margin: 0;
@@ -21,7 +24,6 @@ html {
   background-repeat: no-repeat;
   background-size: contain, cover;
   background-position: center;
-
 }
 
 button, .button {
@@ -35,84 +37,104 @@ button, .button {
   border-radius: 16px;
   box-shadow: -4px 3px 5px black;
 }
+
 button:hover, .button:hover {
   text-decoration: underline;
 }
+
 button:active, .button:active {
   box-shadow: -1px 1px 5px black;
 }
 
+/* HOME PAGE STYLES*/
 .home-page {
   height: 82vh;
 }
+
 h1 {
   margin: 0;
   padding: 2vh;
   background-color: rgba(253, 238, 220, .7);
 }
+
 .home-page button {
   margin: 30vh auto 0;
 }
 
-
-
+/* DISPLAY ANIME LIST PAGE STYLES */
 .data-readout {
   min-height: 82vh;
   text-align: left;
 }
+
 .data-readout h1 {
   padding: 2vh 2vw;
   text-align: center;
   text-decoration: underline;
 }
+
 .anime-list {
   margin: 0;
   padding: 0 10px ;
 }
-.bounty{
+
+li {
+  list-style-type: none;
+}
+
+.bounty {
   padding: 30px;
   margin: 5vh 0 7vh;
   background-color: rgb(233, 214, 190);
   border: 1px solid black;
 }
+
 .data-readout h2 {
   text-decoration: underline;
 }
+
 .data-readout p {
   font-size: 16pt;
 }
+
 .synopsis {
   line-height: 1.5;
   padding: 10px;
   background-color: rgb(234, 225, 214);
   border-radius: 12px;
 }
+
 .header {
   font-size: 17pt;
   margin-left: 20px;
   text-decoration: underline;
 }
+
 .title-thumbnail {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
 }
+
 .title-thumbnail .title {
   width: fit-content;
   padding-left: 20px;
   justify-content: center;
 }
+
 .title-thumbnail img {
   justify-content: left;
   box-shadow: -2px 2px 4px black;
   border: 2px solid aliceblue;
 }
+
 .genre-list li, .alias-list li {
   list-style-type: circle;
   margin-bottom: 10px;
   width: max-content;
   font-size: 13pt;
 }
+
 .poster-link {
   display: flex;
   flex-direction: row;
@@ -122,21 +144,41 @@ h1 {
   margin: 30px auto 50px;
   border: 2px solid black;
 }
+
 .poster-link button, .poster-link .button {
   width: max-content;
   height: max-content;
 }
+
 .reset-readout {
   height: 82vh;
   text-align: center;
   background-color: rgba(253, 238, 220, .7);
   border: 1px solid red;
 }
+
 .reset-readout h1 {
   margin-top: 40vh;
   background: transparent;
 }
 
+.watch-list {
+  height: 82vh;
+}
+
+.bountys-buttons {
+  display: flex;
+  flex-direction: column;
+}
+
+.bountys-buttons button, .bountys-buttons .button {
+  text-align: center;
+  margin: 10px auto;
+  width: 29ch;
+  border: 2px solid red;
+}
+
+/* GET ANIME PAGE STYLES */
 .search-page {
   justify-self: center;
   justify-content: center;
@@ -171,6 +213,8 @@ h1 {
   margin: 10px auto 30px;
   text-align: center;
 }
+
+/* HEADER (NAVBAR) STYLES */
 .nav-header {
   min-height: 8vh;
   height:max-content;
@@ -178,6 +222,7 @@ h1 {
   animation-iteration-count: 1;
   animation-timing-function: linear;
 }
+
 @keyframes drop-nav {
   0% {
     position: sticky;
@@ -200,6 +245,7 @@ h1 {
     top: 0;
   }
 }
+
 @keyframes raise-nav {
   0% {
     position: sticky;
@@ -222,6 +268,7 @@ h1 {
     top: -100px;
   }
 }
+
 .hidden-header {
   min-height: 8vh;
   height: max-content;
@@ -229,8 +276,8 @@ h1 {
   top: -200px;
   animation-duration: 2s;
   animation-timing-function: ease-in-out;
-
 }
+
 header nav {
   display: flex;
   flex-direction: row;
@@ -240,6 +287,7 @@ header nav {
   padding: 0 5px;
   background-color: rgba(253, 238, 220, .7);
 }
+
 .banner {
   display: flex;
   flex-direction: row;
@@ -247,6 +295,7 @@ header nav {
   align-items: center;
   padding: 5px 10px;
 }
+
 .banner p {
   width: max-content;
   font-size: 20pt;
@@ -254,6 +303,7 @@ header nav {
   padding: 5px 10px;
   margin: 0;
 }
+
 .logo {
   padding: 0;
   margin: 0px 10px;
@@ -261,16 +311,19 @@ header nav {
   height: 50px;
   border-radius: 50%;
 }
+
 .nav-items {
   width: 60%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
+
 .nav-items .button {
   width: max-content;
 }
 
+/* FOOTER STYLES */
 footer {
   display: flex;
   flex-direction: row;
@@ -282,54 +335,41 @@ footer {
   color: black;
   background-color: rgba(253, 238, 220, .7);
 }
+
 footer p {
   font-size: 16pt;
 }
 
-li {
-  list-style-type: none;
-}
-
+/* POSTER PAGE STYLES */
 .poster-page {
   height: 90vh;
 }
 
+/* ABOUT PAGE STYLES */
 .about {
   font-size: 16pt;
   height: 82vh;
   text-align: center;
   justify-content: center;
 }
+
 .about h1 {
   text-decoration: underline;
 }
+
 .about p {
   padding: 10px 20px;
   background-color: rgba(253, 238, 220, .9);
 }
+
 .about h2 {
   padding: 10px 20px;
   background-color: rgba(253, 238, 220, .7);
 }
 
-.watch-list {
-  height: 82vh;
-}
-
+/* WATCH LIST PAGE STYLES */
 .bingo-book {
   background-color: aliceblue;
-  border: 2px solid red;
-}
-
-.bountys-buttons {
-  display: flex;
-  flex-direction: column;
-}
-
-.bountys-buttons button, .bountys-buttons .button {
-  text-align: center;
-  margin: 10px auto;
-  width: 29ch;
   border: 2px solid red;
 }
 
@@ -337,13 +377,16 @@ li {
   display: flex;
   flex-direction: row;
 }
+
 .crossed {
   text-decoration: line-through;
 }
+
 .eraser-button {
 width: max-content;
 margin: auto 0 auto 10px;
 }
+
 .eraser-x {
   width: 20px;
   padding: 1px;
