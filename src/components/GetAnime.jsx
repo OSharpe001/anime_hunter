@@ -4,6 +4,7 @@ import Footer from "./Footer";
 
 export default function GetAnime({ setAnimeList, navigate, title, setTitle, genres, setGenres }) {
 
+    // CHANGE TITLE AND/OR GENRES VARIABLE DEPENDING ON WHICH INPUT USER TYPED IN
     const handleChange = ({ target }) => {
         let name = target.name;
         let value = target.value;
@@ -11,6 +12,7 @@ export default function GetAnime({ setAnimeList, navigate, title, setTitle, genr
         name === "genres" && value !== "" && setGenres([value]);
     };
 
+    // START API CALL WITH SEARCH TERMS AND NAVIGATE TO LIST VIEW PAGE AFTER 1 1/2 SECONDS (ENOUGH TIME FOR API CALL TO RETURN DATA)
     const handleSubmit = (e) => {
         e.preventDefault();
         fetchFromAPI(`anime?page=1&size=10${genres.length>0 ? `&genres=${genres.slice(0).join(",")}` : ""}&sortBy=ranking&sortOrder=asc${title ? `&search=${title}` : ""}`)

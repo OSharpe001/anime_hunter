@@ -3,6 +3,7 @@ import Footer from "./Footer";
 
 export default function HomePage({ navigate }) {
 
+  // NAVIGATE TO SEARCH FORM PAGE
   const getStarted = () => {
     navigate("/hunt");
   };
