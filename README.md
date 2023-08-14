@@ -16,13 +16,16 @@
 
 ## Technologies Used:
 
-- React Router
-- Axios
-- API
-- React/JSX
-- JavaScript
-- HTML
-- CSS
+- React Router: Used to set up a multi-page-like app.
+- Axios: Used to make API fetch calls just a little simpler.
+- API: Application Program Interface, a way to get info from other applications over the internet.
+- React/JSX: A library that combines JavaScript and HTML functionality.
+- JavaScript: Used to adapt interactivity to a web page, making it a "web application".
+- HTML: The "document" section of a web page. Holds all the document's text.
+- CSS: Used to apply styling to the web page document.
+- **HONORABLE MENTIONS**
+- React's useLocation: Used to get the path of the current page shown in the browser.
+-JavaScript's "window" reference: Used to get info about what's happening in the browser's current window (like mouse location).
 
 ---
 
