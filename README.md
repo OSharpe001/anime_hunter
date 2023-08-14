@@ -10,7 +10,7 @@
 
 ## Issues I couldn't resolve:
 
-- **Getting my API key to work on netlify!**
+- **None (so far), anymore...**
 
 ---
 
