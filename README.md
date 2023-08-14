@@ -10,7 +10,7 @@
 
 ## Issues I couldn't resolve:
 
-- **.....**
+- **Getting my API key to work on netlify!**
 
 ---
 
@@ -39,7 +39,7 @@
 ---
 
 ## Live Site Link:
-- [...](...)
+- [Anime Hunter](https://animehunterguild.netlify.app/)
 
 ---
 
@@ -82,20 +82,8 @@
 
 2. **Add my personal rating to "Bounty" (search) items.**
 
-3. **Automatically have the "View Poster" button change to "Change Poster" which will allow users to have a new background image to randomly appear after each press.**
-
-4. **Set up functions to cross-out, un-cross and delete titles in their Bingo Book.**
-
-5. **Add a "Check Poster" button to the "bounty" if the poster button was pressed so that users wouldn't have to scroll to top of the page to press the "View Poster" button.**
-
-6. **Add "Add to Bingo Book" button to each bounty sheet so users can add a new title to their watch list.**
-
-7. **Automatically change "Add to Bingo Book" button to a "Remove from Bingo Book" button if that title is already in their watchlist.**
-
 8. **Create "Bingo Book" with buttons and turn-page animations.**
-
-9. **Implement the hide/display feature on the navbar when user scrolls a page.**
 
 10. **Change fonts on particular elements (like on the "bounty sheets").**
 
-
+11. **Get a lot more clear big-size fan art for random backgrounds.**
