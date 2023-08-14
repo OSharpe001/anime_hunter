@@ -57,18 +57,17 @@ export default function App() {
     localStorage.setItem("WatchList", JSON.stringify(updatedWatchList));
   };
 
-  // ***NECESSARY! REMEMBER TO UNCOMMENT WHEN TESTING IS COMPLETE!*** Currently doubles the api requests when also using search
   // INITIAL SEARCH USEEFFECT
-  // useEffect(() => {
-  //   try {
-  //       fetchFromAPI(`anime?page=1&size=10&sortBy=ranking&sortOrder=asc`)
-  //       .then((data) => {
-  //           setAnimeList(data);
-  //       });
-  //   } catch (error) {
-  //       console.log("An error within the useEffect: ", error);
-  //   }
-  // }, [setAnimeList]);
+  useEffect(() => {
+    try {
+        fetchFromAPI(`anime?page=1&size=10&sortBy=ranking&sortOrder=asc`)
+        .then((data) => {
+            setAnimeList(data);
+        });
+    } catch (error) {
+        console.log("An error within the useEffect: ", error);
+    }
+  }, [setAnimeList]);
 
   return (
     <div className='App'>
