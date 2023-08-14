@@ -1,40 +1,8 @@
 import logo from "../assets/images/logo.png";
 import { Link } from "react-router-dom";
 import { useLocation } from "react-router-dom";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 
-// ******************** TRYING A MOVING HEADER
-// const ScrollPosition = ({ render }) => {
-//   const [scrollPosition, setScrollPosition] = useState({
-//     y: 0,
-//   });
-//   const [prevScrollPosition, setPreviousScrollPositiion] = useState({
-//     y: 0,
-//   })
-
-//   useEffect(() => {
-//     const handleScrollPositionChange = (e) => {
-//       setPreviousScrollPositiion({
-//         y: scrollPosition.y
-//         },);
-//       setScrollPosition({
-//         y: window.scrollY
-//       },);
-//     };
-
-//     window.addEventListener("scroll", handleScrollPositionChange);
-
-//     return () => {
-//       window.removeEventListener("scroll", handleScrollPositionChange);
-//     };
-//   }, [[window.scrollY]]);
-
-//   let headerPos;
-//   scrollPosition.y>0?scrollPosition.y>prevScrollPosition.y? headerPos= "-200px": headerPos="0":headerPos="0";
-
-//   return "translateY("+headerPos+")"
-// };
-// ******************** TRYING A MOVING HEADER
 
 export default function Header({ navigate, preserveImage, setPreserveImage, changeImage }) {
 
@@ -42,34 +10,55 @@ export default function Header({ navigate, preserveImage, setPreserveImage, chan
     navigate("/");
   };
 
+  // NECESSARY TO CHANGE THE "VIEW-POSTER" BUTTON TO "CHANGE-POSTER" WHEN ON POSTER PAGE
+  const currentScreen = useLocation().pathname;
+
+  // FUNCTION TO STOP POSTER FROM AUTO-CHANGING WHEN GOING TO POSTER PAGE
   const saveImage = () => {
-    setPreserveImage(true)
+    setPreserveImage(true);
   };
+
+  // CHANGE POSTER FUNCTION
   const resetImage = () => {
     setPreserveImage(false);
     changeImage();
   };
 
-  const currentScreen = useLocation().pathname;
-  // console.log("HEADER.JSX'S CURRENTSCREEN.PATH VALUE: ", currentScreen);
-
-  // console.log("HEADER.JS' SCROLLPOSITION VALUE: ", ScrollPosition);
+  // **SHIFTING HEADER USESTATES AND FUNCTIONS
+  const [scrollPosition, setScrollPosition] = useState({
+    y: 0,
+  });
+  const [prevScrollPosition, setPreviousScrollPositiion] = useState({
+    y: 0,
+  })
+  const handleScrollPositionChange = (e) => {
+    setPreviousScrollPositiion({
+      y: scrollPosition.y
+      },);
+    setScrollPosition({
+      y: window.scrollY
+    },);
+  };
+  window.addEventListener("scroll", handleScrollPositionChange);
+  let headerPos =  scrollPosition.y>0 && scrollPosition.y>prevScrollPosition.y ?"hide": "show";
 
   return (
     <header
             className="nav-header"
-            // style={{
-            //   // position: "fixed",
-            //   // top: "0",
-            //   // left: "0",
-            //   // right: "0",
-            //   // translateY: "0",
-            //   // transform: `translateY(${ScrollPosition})`,
-            //   // transform: {ScrollPosition},
-            //   // transitionProperty: "transform",
-            //   // transitionDuration: "0.3s",
-            //   // transitionTimingFunction: "ease-in-out"
-            // }}
+            style={
+              headerPos === "hide" ?
+                {
+                  position: "sticky",
+                  top: "-100px",
+                  animationName: "raise-nav"
+                }
+              :
+              {
+                position: "sticky",
+                top: "0",
+                animationName: "drop-nav"
+              }
+            }
     >
       <nav>
         <div className="banner" onClick={backHome}>
