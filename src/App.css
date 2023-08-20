@@ -269,14 +269,14 @@ li {
   }
 }
 
-.hidden-header {
+/* .hidden-header {
   min-height: 8vh;
   height: max-content;
   position: relative;
   top: -200px;
   animation-duration: 2s;
   animation-timing-function: ease-in-out;
-}
+} */
 
 header nav {
   display: flex;
