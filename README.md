@@ -10,7 +10,7 @@
 
 ## Issues I couldn't resolve:
 
-- **None (so far), anymore...**
+- **None, so far...**
 
 ---
 
