@@ -70,7 +70,7 @@ export default function DisplayAnimeList({ animeList, navigate, title, genres, c
                 <p className="header">Aliases/AKA: </p>
                 <ul className="alias-list">
                   {item.alternativeTitles.map((title, index) => (
-                    <li key={`${title}-${index}`}>{title}</li>
+                    <li className="alias-list-item" key={`${title}-${index}`}>{title}</li>
                   ))}
                 </ul>
 
