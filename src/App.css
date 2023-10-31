@@ -10,7 +10,7 @@ font-family: 'Romanesco', cursive; */
 }
 
 html {
-  background-color: rgb(253, 238, 220)
+  background-color: rgb(253, 238, 220);
 }
 
 .App {
@@ -180,7 +180,6 @@ li {
 
 .watch-list {
   min-height: 82vh;
-  /* font-size: 9ch; */
 }
 
 .bountys-buttons {
@@ -188,11 +187,11 @@ li {
   flex-direction: column;
 }
 
-.bountys-buttons button,
 .bountys-buttons .button {
   text-align: center;
   margin: 10px auto;
-  width: 29ch;
+  width: 100%;
+  /* border: 2px solid red; */
 }
 
 /* GET ANIME PAGE STYLES */
@@ -496,7 +495,7 @@ footer p {
     margin: 0 auto;
     width: 95%;
     min-height: 75vh;
-    font-size: 4ch;
+    font-size: 16pt;
   }
 
   .bingo-book {
