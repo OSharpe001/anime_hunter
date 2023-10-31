@@ -6,8 +6,11 @@ font-family: 'Romanesco', cursive; */
 /* GENERAL STYLES */
 * {
   box-sizing: border-box;
-  font-size: 20pt;
   margin: 0;
+}
+
+html {
+  background-color: rgb(253, 238, 220)
 }
 
 .App {
@@ -15,9 +18,10 @@ font-family: 'Romanesco', cursive; */
   margin: 0;
   background-color: rgb(253, 238, 220);
   border: 1px solid black;
+  height: 100vh;
 }
 
-.hidden{
+.hidden {
   display: none;
 }
 
@@ -54,7 +58,6 @@ button:active,
 /* HOME PAGE STYLES*/
 .home-page {
   height: 82vh;
-  border: 2px solid red;
 }
 
 h1 {
@@ -71,6 +74,8 @@ h1 {
 .data-readout {
   min-height: 82vh;
   text-align: left;
+  font-size: 16pt;
+  /* border: 2px solid red; */
 }
 
 .data-readout h1 {
@@ -82,6 +87,7 @@ h1 {
 .anime-list {
   margin: 0;
   padding: 0 10px;
+  /* border: 2px solid red; */
 }
 
 li {
@@ -93,6 +99,7 @@ li {
   margin: 5vh 0 7vh;
   background-color: rgb(233, 214, 190);
   border: 1px solid black;
+  font-size: 16pt;
 }
 
 .data-readout h2 {
@@ -152,10 +159,11 @@ li {
   border: 2px solid black;
 }
 
-.poster-link button,
-.poster-link .button {
+
+.poster-link button {
   width: max-content;
   height: max-content;
+  cursor: pointer;
 }
 
 .reset-readout {
@@ -171,7 +179,8 @@ li {
 }
 
 .watch-list {
-  height: 82vh;
+  min-height: 82vh;
+  /* font-size: 9ch; */
 }
 
 .bountys-buttons {
@@ -365,7 +374,7 @@ footer p {
 /* ABOUT PAGE STYLES */
 .about {
   font-size: 16pt;
-  height: 82vh;
+  min-height: 82vh;
   text-align: center;
   justify-content: center;
 }
@@ -387,6 +396,10 @@ footer p {
 /* WATCH LIST PAGE STYLES */
 .bingo-book {
   background-color: aliceblue;
+  min-height: 64vh;
+  width: 80%;
+  margin: auto;
+
 }
 
 .bingo-book-entry {
@@ -394,18 +407,30 @@ footer p {
   flex-direction: row;
 }
 
+.active,
+.crossed {
+  cursor: pointer;
+}
+
+.active:hover,
+.crossed:hover {
+  color: blue;
+}
+
 .crossed {
   text-decoration: line-through;
 }
 
 .eraser-button {
-  width: max-content;
+  width: min-content;
+  height: min-content;
   margin: auto 0 auto 10px;
+  cursor: pointer;
+  border: 2px solid gray;
 }
 
 .eraser-x {
   width: 20px;
-  padding: 1px;
   margin: 0;
 }
 
@@ -466,6 +491,38 @@ footer p {
     margin: 5vh 0 1vh;
   }
 
+  /* WATCH LIST PAGE STYLES */
+  .watch-list {
+    margin: 0 auto;
+    width: 95%;
+    min-height: 75vh;
+    font-size: 4ch;
+  }
+
+  .bingo-book {
+    width:85%;
+    margin: auto;
+    background-color: aliceblue;
+    border: 5px ridge black;
+  }
+
+  .bingo-book-entry {
+    justify-content: space-between;
+  }
+
+  .bingo-book-entry p {
+    text-align: left;
+    margin: 4px 0;
+  }
+
+  .eraser-button {
+    margin: 0;
+  }
+
+  .eraser-x {
+    width: 15px;
+  }
+
   /* FOOTER STYLES */
   footer {
     flex-direction: column;
@@ -474,5 +531,6 @@ footer p {
 
   footer p {
     margin: 0px auto 20px;
+    border-top: 2px solid black;
   }
 }

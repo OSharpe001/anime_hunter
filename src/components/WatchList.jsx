@@ -38,7 +38,7 @@ export default function WatchList({ viewWatchList, toggleWatchListItem, eraseWat
             watchList.length > 0 ?
               watchList.map(title =>
                 <div key={title.name}className="bingo-book-entry">
-                  <p  onClick={() => setScratchTitle(title.name)} className={title.active ? "" : "crossed"}>{title.name}</p>
+                  <p  onClick={() => setScratchTitle(title.name)} className={title.active ? "active" : "crossed"}>-{title.name}</p>
                   <button className="eraser-button" onClick={() => setEraseTitle(title.name)}>
                     <img className="eraser-x" src={close} alt="an x" />
                   </button>

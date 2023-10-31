@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
@@ -39,7 +40,6 @@
   },
   "description": "Readmsoon to come... Must include: 1- README INTRO AND APP DESCRIPTION 2- NAME OF API USED 3- ISSUES FACED AND \"RESOLVED\" STATUS (AND HOW IT WAS RESOLVED) 4- TRY TO ADD A USER STORY 5- SHOUT-OUTS TO PEOPLE WHO HELPED LIKE EJ, MIRANDA(HIDING API KEY FROM GITHUB) AND FARDUS (WHERE TO PLACE API KEY ON NETLIFY TO MAKE APP WORK WHEN DEPLOYED FROM GITHUB)",
   "main": "index.js",
-  "devDependencies": {},
   "author": "",
   "license": "ISC"
 }
