@@ -71,7 +71,7 @@ export default function App() {
 
   return (
     <div className='App'>
-      <div className={`container ${currentBackground.class}`} style={{backgroundImage: `url("${currentBackground.image}")`}}>
+      <div className={`container ${currentBackground.class || "character-show-image"}`} style={{backgroundImage: `url("${currentBackground.image || currentBackground}")`}}>
         <Header
             preserveImage={preserveImage}
             setPreserveImage={setPreserveImage}
