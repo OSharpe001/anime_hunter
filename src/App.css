@@ -75,7 +75,6 @@ h1 {
   min-height: 82vh;
   text-align: left;
   font-size: 16pt;
-  /* border: 2px solid red; */
 }
 
 .data-readout h1 {
@@ -87,7 +86,6 @@ h1 {
 .anime-list {
   margin: 0;
   padding: 0 10px;
-  /* border: 2px solid red; */
 }
 
 li {
@@ -180,6 +178,7 @@ li {
 
 .watch-list {
   min-height: 82vh;
+  font-size: 16pt;
 }
 
 .bountys-buttons {
@@ -191,7 +190,6 @@ li {
   text-align: center;
   margin: 10px auto;
   width: 100%;
-  /* border: 2px solid red; */
 }
 
 /* GET ANIME PAGE STYLES */
@@ -394,11 +392,11 @@ footer p {
 
 /* WATCH LIST PAGE STYLES */
 .bingo-book {
-  background-color: aliceblue;
   min-height: 64vh;
   width: 80%;
-  margin: auto;
-
+  margin: 20px auto ;
+  border: 5px ridge black;
+  background-color: rgba(240, 248, 255, .6);
 }
 
 .bingo-book-entry {
@@ -436,9 +434,6 @@ footer p {
 /* ---MOBILE/SMALL SCREENS STYLES--- */
 @media (max-width: 650px) {
 
-  /* GENERAL STYLES */
-
-
   /* HEADER STYLES */
   .mobile-menu-button {
     display: initial;
@@ -467,9 +462,9 @@ footer p {
     top: 120%;
     right: 2%;
     justify-content: space-between;
-    background-color: rgba(253, 238, 220, .7);
     border-radius: 7px;
     box-shadow: -2px 2px 10px rgba(0, 0, 0, .7);
+    background-color: rgba(253, 238, 220, .7);
   }
 
   .nav-items-mobile .button {
@@ -499,10 +494,7 @@ footer p {
   }
 
   .bingo-book {
-    width:85%;
-    margin: auto;
-    background-color: aliceblue;
-    border: 5px ridge black;
+    width: 85%;
   }
 
   .bingo-book-entry {
