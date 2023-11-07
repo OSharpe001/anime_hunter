@@ -1,43 +1,10 @@
 # Welcome to the Anime Hunter's Readme.
-**Here, we'll discuss issues that I couldn't (yet) overcome, technologies used and how I installed the non-standard ones, the approach taken, a "User Story" and cap it all off with my stretch goals for this app. I'll also provide the link to my site, within.**
+**Here, we'll discuss the approach taken, a "User Story" and cap it all off with my stretch goals for this app. I'll also provide the link to my site, within.**
 
 ---
 
 ## App Description
 **Anime Hunter is an app with a "Hunter's Guild" theme and is used to search for anime and get a few details. There's an "easy search" feature to get a few titles without having to input search parameters, for those new to anime. There's also a notes-feature to save the anime from a search that the user finds interesting. Finally, there's a "Poster Page" feature for users who would like to take a better look at the random fan art in the background or a poster associated with an anime they found through the search feature.**
-
----
-
-## Issues I couldn't resolve:
-
-- **None, so far...**
-
----
-
-## Technologies Used:
-
-- React Router: Used to set up a multi-page-like app.
-- Axios: Used to make API fetch calls just a little simpler.
-- API: Application Program Interface, a way to get info from other applications over the internet.
-- React/JSX: A library that combines JavaScript and HTML functionality.
-- JavaScript: Used to adapt interactivity to a web page, making it a "web application".
-- HTML: The "document" section of a web page. Holds all the document's text.
-- CSS: Used to apply styling to the web page document.
-- **HONORABLE MENTIONS**
-- React's useLocation: Used to get the path of the current page shown in the browser.
-- JavaScript's "window" reference: Used to get info about what's happening in the browser's current window (like mouse location).
-
----
-
-## Installation of Non-Standard Technologies:
-
-- React: created app template by typing "npx create-react-app ." in the terminal for my project's folder.
-
-- React Router: type "npm i react-router-dom" in my project's terminal.
-
-- Axios: type "npm i axios" in my project's terminal.
-
-- Anime-DB API: aquired the API key by subscribing to Anime-DB on [rapidapi.com](https://rapidapi.com/hub) and then added it to my files to use in a fetch-call, within.
 
 ---
 
@@ -80,8 +47,6 @@
 ---
 
 ## Stretch Goals:
-
-1. **Make app responsive for mobile.**
 
 2. **Add my personal rating to "Bounty" (search) items.**
 
