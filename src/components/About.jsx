@@ -17,7 +17,7 @@ export default function About() {
                     or genres into the search form.
                     <br/>
                     The Bingo Book is where you'll keep note of the bounties that catch your eye.
-                    This your personal book so all of your most savory prey will be kept in a place
+                    This is your personal book so all of your most savory prey will be kept in a place
                     you can always refer back to. After completing a bounty (watching your anime),
                     simply scratch'em off your list. If after trailing and scouting your prey, you
                     feel as if they're not worth the time and effort, you can erase them completely!

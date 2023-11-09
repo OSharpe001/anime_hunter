@@ -382,6 +382,7 @@ footer p {
 .about p {
   padding: 10px 20px;
   background-color: rgba(253, 238, 220, .9);
+  line-height: 2;
 }
 
 .about h2 {
