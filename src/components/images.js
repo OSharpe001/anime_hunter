@@ -44,7 +44,66 @@ import cosplay_aiz from "../assets/images/anime_pics/cosplay_aiz.png";
 import aisha1 from "../assets/images/anime_pics/aisha1.png";
 import aiz from "../assets/images/anime_pics/aiz.png";
 import dan_machi3 from "../assets/images/anime_pics/dan_machi3.png";
+
 import demon_slayer2 from "../assets/images/anime_pics/demon_slayer2.png";
+import albis_shion from "../assets/images/anime_pics/albis_shion.jpg";
+import aqua_vanir from "../assets/images/anime_pics/aqua_vanir.jpg";
+import blade_sophitia from "../assets/images/anime_pics/blade_sophitia.jpg";
+import dabi from "../assets/images/anime_pics/dabi.jpg";
+import darkness1 from "../assets/images/anime_pics/darkness1.jpg";
+import darkness2 from "../assets/images/anime_pics/darkness2.jpg";
+import delta_zeta from "../assets/images/anime_pics/delta_zeta.jpg";
+import diablo from "../assets/images/anime_pics/diablo.png";
+import elinalise from "../assets/images/anime_pics/elinalise.jpg";
+import eminence_in_shadow from "../assets/images/anime_pics/eminence_in_shadow.jpg";
+import eris_ruijerd from "../assets/images/anime_pics/eris_ruijerd.jpg";
+import gaeul from "../assets/images/anime_pics/gaeul.jpg";
+import grown_hinata from "../assets/images/anime_pics/grown_hinata.png";
+import hinata_yuuki_shizu from "../assets/images/anime_pics/hinata_yuuki_shizu.jpg";
+import hobin_jihyeok from "../assets/images/anime_pics/hobin_jihyeok.jpg";
+import hobin1 from "../assets/images/anime_pics/hobin1.jpg";
+import hobin2 from "../assets/images/anime_pics/hobin2.jpg";
+import jobless_reincarnation2 from "../assets/images/anime_pics/jobless_reincarnation2.jpg";
+import kagaya_and_wife from "../assets/images/anime_pics/kagaya_and_wife.jpg";
+import konosuba from "../assets/images/anime_pics/konosuba.jpg";
+import maria from "../assets/images/anime_pics/maria.jpg";
+import mha1 from "../assets/images/anime_pics/mha1.jpg";
+import mha2 from "../assets/images/anime_pics/mha2.jpg";
+import mha3 from "../assets/images/anime_pics/mha3.jpg";
+import mha4 from "../assets/images/anime_pics/mha4.jpg";
+import mi from "../assets/images/anime_pics/mi.jpg";
+import millim from "../assets/images/anime_pics/millim.jpg";
+import mio from "../assets/images/anime_pics/mio.jpg";
+import muzan1 from "../assets/images/anime_pics/muzan1.jpg";
+import muzan2 from "../assets/images/anime_pics/muzan2.jpg";
+import muzan3 from "../assets/images/anime_pics/muzan3.jpg";
+import muzan4 from "../assets/images/anime_pics/muzan4.jpg";
+import ochoco_froppy from "../assets/images/anime_pics/ochoco_froppy.jpg";
+import ochoco from "../assets/images/anime_pics/ochoco.jpg";
+import paul from "../assets/images/anime_pics/paul.jpg";
+import rimuru2 from "../assets/images/anime_pics/rimuru2.png";
+import rimuru3 from "../assets/images/anime_pics/rimuru3.jpg";
+import roxy2 from "../assets/images/anime_pics/roxy2.jpg";
+import rudy_silphie from "../assets/images/anime_pics/rudy_silphie.jpg";
+import rudy1 from "../assets/images/anime_pics/rudy1.jpg";
+import rudy2 from "../assets/images/anime_pics/rudy2.jpg";
+import shiki_makoto from "../assets/images/anime_pics/shiki_makoto.jpg";
+import shoto from "../assets/images/anime_pics/shoto.jpg";
+import skorean_anime from "../assets/images/anime_pics/skorean_anime.jpg";
+import slimes_hinata from "../assets/images/anime_pics/slimes_hinata.png";
+import slimes_hinata2 from "../assets/images/anime_pics/slimes_hinata2.jpg";
+import slimes_hinata3 from "../assets/images/anime_pics/slimes_hinata3.png";
+import sofia from "../assets/images/anime_pics/sofia.jpg";
+import solo_leveling from "../assets/images/anime_pics/solo_leveling.jpg";
+import sophitia_arnest_iona from "../assets/images/anime_pics/sophitia_arnest_iona.jpg";
+import taehun from "../assets/images/anime_pics/taehun.jpg";
+import tanjiro_falling from "../assets/images/anime_pics/tanjiro_falling.jpg";
+import tanjiro2 from "../assets/images/anime_pics/tanjiro2.jpg";
+import tanjiro3 from "../assets/images/anime_pics/tanjiro3.jpg";
+import toga1 from "../assets/images/anime_pics/toga1.jpg";
+import toga2 from "../assets/images/anime_pics/toga2.jpg";
+import veldora from "../assets/images/anime_pics/veldora.jpg";
+
 
 
 
@@ -97,4 +156,61 @@ export const images = [
     aiz,
     dan_machi3,
     demon_slayer2,
+    albis_shion,
+    aqua_vanir,
+    blade_sophitia,
+    dabi,
+    darkness1,
+    darkness2,
+    delta_zeta,
+    diablo,
+    elinalise,
+    eminence_in_shadow,
+    eris_ruijerd,
+    gaeul,
+    grown_hinata,
+    hinata_yuuki_shizu,
+    hobin_jihyeok,
+    hobin1,
+    hobin2,
+    jobless_reincarnation2,
+    kagaya_and_wife,
+    konosuba,
+    maria,
+    mha1,
+    mha2,
+    mha3,
+    mha4,
+    mi,
+    millim,
+    mio,
+    muzan1,
+    muzan2,
+    muzan3,
+    muzan4,
+    ochoco_froppy,
+    ochoco,
+    paul,
+    rimuru2,
+    rimuru3,
+    roxy2,
+    rudy_silphie,
+    rudy1,
+    rudy2,
+    shiki_makoto,
+    shoto,
+    skorean_anime,
+    slimes_hinata,
+    slimes_hinata2,
+    slimes_hinata3,
+    sofia,
+    solo_leveling,
+    sophitia_arnest_iona,
+    taehun,
+    tanjiro_falling,
+    tanjiro2,
+    tanjiro3,
+    toga1,
+    toga2,
+    veldora,
 ];
