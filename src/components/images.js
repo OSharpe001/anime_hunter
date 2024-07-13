@@ -44,6 +44,7 @@ import cosplay_aiz from "../assets/images/anime_pics/cosplay_aiz.png";
 import aisha1 from "../assets/images/anime_pics/aisha1.png";
 import aiz from "../assets/images/anime_pics/aiz.png";
 import dan_machi3 from "../assets/images/anime_pics/dan_machi3.png";
+import demon_slayer2 from "../assets/images/anime_pics/demon_slayer2.png";
 
 
 
@@ -95,4 +96,5 @@ export const images = [
     aisha1,
     aiz,
     dan_machi3,
+    demon_slayer2,
 ];
