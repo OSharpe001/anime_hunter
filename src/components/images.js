@@ -103,6 +103,18 @@ import tanjiro3 from "../assets/images/anime_pics/tanjiro3.jpg";
 import toga1 from "../assets/images/anime_pics/toga1.jpg";
 import toga2 from "../assets/images/anime_pics/toga2.jpg";
 import veldora from "../assets/images/anime_pics/veldora.jpg";
+import priscilla_liliana from "../assets/images/anime_pics/priscilla_liliana.png";
+import priscilla_schult from "../assets/images/anime_pics/priscilla_schult.png";
+import mare_aura from "../assets/images/anime_pics/mare_aura.jpg";
+import holiday_emilia from "../assets/images/anime_pics/holiday_emilia.jpg";
+import dan_machi_lore from "../assets/images/anime_pics/dan_machi_lore.png";
+import bell_ottar from "../assets/images/anime_pics/bell_ottar.png";
+import winter_bell_goddesses from "../assets/images/anime_pics/winter_bell_goddesses.jpg";
+import koinzell from "../assets/images/anime_pics/koinzell.jpg";
+import alina from "../assets/images/anime_pics/alina.png";
+import alina2 from "../assets/images/anime_pics/alina2.png";
+import aria_behemoth from "../assets/images/anime_pics/aria_behemoth.png";
+
 
 
 
@@ -213,4 +225,15 @@ export const images = [
     toga1,
     toga2,
     veldora,
+    priscilla_liliana,
+    priscilla_schult,
+    mare_aura,
+    holiday_emilia,
+    dan_machi_lore,
+    bell_ottar,
+    winter_bell_goddesses,
+    koinzell,
+    alina,
+    alina2,
+    aria_behemoth,
 ];
