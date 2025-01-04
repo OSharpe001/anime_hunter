@@ -103,6 +103,7 @@ import tanjiro3 from "../assets/images/anime_pics/tanjiro3.jpg";
 import toga1 from "../assets/images/anime_pics/toga1.jpg";
 import toga2 from "../assets/images/anime_pics/toga2.jpg";
 import veldora from "../assets/images/anime_pics/veldora.jpg";
+
 import priscilla_liliana from "../assets/images/anime_pics/priscilla_liliana.png";
 import priscilla_schult from "../assets/images/anime_pics/priscilla_schult.png";
 import mare_aura from "../assets/images/anime_pics/mare_aura.jpg";
