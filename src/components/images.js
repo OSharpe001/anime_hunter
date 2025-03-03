@@ -114,7 +114,6 @@ import winter_bell_goddesses from "../assets/images/anime_pics/winter_bell_godde
 import koinzell from "../assets/images/anime_pics/koinzell.jpg";
 import alina from "../assets/images/anime_pics/alina.png";
 import alina2 from "../assets/images/anime_pics/alina2.png";
-import aria_behemoth from "../assets/images/anime_pics/aria_behemoth.png";
 
 import narutoAdult from "../assets/images/anime_pics/narutoAdult.png";
 import jinwoo from "../assets/images/anime_pics/jinwoo.png";
@@ -250,7 +249,6 @@ export const images = [
     koinzell,
     alina,
     alina2,
-    aria_behemoth,
     narutoAdult,
     jinwoo,
     jinwooDoubleBladed,
