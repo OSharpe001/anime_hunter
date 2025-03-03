@@ -117,11 +117,11 @@ import alina2 from "../assets/images/anime_pics/alina2.png";
 import aria_behemoth from "../assets/images/anime_pics/aria_behemoth.png";
 
 import narutoAdult from "../assets/images/anime_pics/narutoAdult.png";
-import sung from "../assets/images/anime_pics/sung.png";
-import sungDoubleBladed from "../assets/images/anime_pics/sungDoubleBladed.png";
-import sung_igris_iron_tank from "../assets/images/anime_pics/sung_igris_iron_tank.png";
-import sung_igris_iron from "../assets/images/anime_pics/sung_igris_iron.png";
-import sung_vs_igris from "../assets/images/anime_pics/sung_vs_igris.png";
+import jinwoo from "../assets/images/anime_pics/jinwoo.png";
+import jinwooDoubleBladed from "../assets/images/anime_pics/jinwooDoubleBladed.png";
+import jinwoo_igris_iron_tank from "../assets/images/anime_pics/jinwoo_igris_iron_tank.png";
+import jinwoo_igris_iron from "../assets/images/anime_pics/jinwoo_igris_iron.png";
+import jinwoo_vs_igris from "../assets/images/anime_pics/jinwoo_vs_igris.png";
 
 
 
@@ -246,9 +246,9 @@ export const images = [
     alina2,
     aria_behemoth,
     narutoAdult,
-    sung,
-    sungDoubleBladed,
-    sung_igris_iron_tank,
-    sung_igris_iron,
-    sung_vs_igris,
+    jinwoo,
+    jinwooDoubleBladed,
+    jinwoo_igris_iron_tank,
+    jinwoo_igris_iron,
+    jinwoo_vs_igris,
 ];
