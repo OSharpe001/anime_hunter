@@ -123,6 +123,12 @@ import jinwoo_igris_iron_tank from "../assets/images/anime_pics/jinwoo_igris_iro
 import jinwoo_igris_iron from "../assets/images/anime_pics/jinwoo_igris_iron.png";
 import jinwoo_vs_igris from "../assets/images/anime_pics/jinwoo_vs_igris.png";
 
+import castlevania from "../assets/images/anime_pics/castlevania.jpg";
+import most_notorious_talker from "../assets/images/anime_pics/most_notorious_talker.jpg";
+import re_zero_se3 from "../assets/images/anime_pics/re_zero_se3.jpg";
+import freya from "../assets/images/anime_pics/freya.jpg";
+
+
 
 
 
@@ -251,4 +257,8 @@ export const images = [
     jinwoo_igris_iron_tank,
     jinwoo_igris_iron,
     jinwoo_vs_igris,
+    castlevania,
+    most_notorious_talker,
+    re_zero_se3,
+    freya,
 ];
