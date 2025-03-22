@@ -127,6 +127,13 @@ import most_notorious_talker from "../assets/images/anime_pics/most_notorious_ta
 import re_zero_se3 from "../assets/images/anime_pics/re_zero_se3.jpg";
 import freya from "../assets/images/anime_pics/freya.jpg";
 
+import baek_transformed from "../assets/images/anime_pics/baek_transformed.jpg";
+import beru from "../assets/images/anime_pics/beru.png";
+import esil from "../assets/images/anime_pics/esil.png";
+import goto from "../assets/images/anime_pics/goto.png";
+import jinwoo_esil from "../assets/images/anime_pics/jinwoo_esil.png";
+import jinwoo_in_action from "../assets/images/anime_pics/jinwoo_in_action.png";
+import park from "../assets/images/anime_pics/park.jpg";
 
 
 
@@ -259,4 +266,11 @@ export const images = [
     most_notorious_talker,
     re_zero_se3,
     freya,
+    baek_transformed,
+    beru,
+    esil,
+    goto,
+    jinwoo_esil,
+    jinwoo_in_action,
+    park,
 ];
