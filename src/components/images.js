@@ -135,11 +135,20 @@ import jinwoo_esil from "../assets/images/anime_pics/jinwoo_esil.png";
 import jinwoo_in_action from "../assets/images/anime_pics/jinwoo_in_action.png";
 import park from "../assets/images/anime_pics/park.jpg";
 
-
-
-
-
-
+import beru_in_action from "../assets/images/anime_pics/beru_in_action.jpg";
+import emilia_regulus from "../assets/images/anime_pics/emilia_regulus.png";
+import hizashi from "../assets/images/anime_pics/hizashi.png";
+import jinwoo_beru from "../assets/images/anime_pics/jinwoo_beru.png";
+import jinwoo_strikes_back from "../assets/images/anime_pics/jinwoo_strikes_back.png";
+import jinwoo2 from "../assets/images/anime_pics/jinwoo2.jpg";
+import nemuri from "../assets/images/anime_pics/nemuri.png";
+import rumi from "../assets/images/anime_pics/rumi.png";
+import rumi2 from "../assets/images/anime_pics/rumi2.png";
+import shinya from "../assets/images/anime_pics/shinya.png";
+import shota from "../assets/images/anime_pics/shota.png";
+import solo_leveling_generals from "../assets/images/anime_pics/solo_leveling_generals.png";
+import statue_of_god from "../assets/images/anime_pics/statue_of_god.png";
+import unimpressed_jinwoo from "../assets/images/anime_pics/unimpressed_jinwoo.png";
 
 
 export const images = [
@@ -273,4 +282,18 @@ export const images = [
     jinwoo_esil,
     jinwoo_in_action,
     park,
+    beru_in_action,
+    emilia_regulus,
+    hizashi,
+    jinwoo_beru,
+    jinwoo_strikes_back,
+    jinwoo2,
+    nemuri,
+    rumi,
+    rumi2,
+    shinya,
+    shota,
+    solo_leveling_generals,
+    statue_of_god,
+    unimpressed_jinwoo,
 ];
