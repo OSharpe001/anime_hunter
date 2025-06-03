@@ -150,6 +150,11 @@ import solo_leveling_generals from "../assets/images/anime_pics/solo_leveling_ge
 import statue_of_god from "../assets/images/anime_pics/statue_of_god.png";
 import unimpressed_jinwoo from "../assets/images/anime_pics/unimpressed_jinwoo.png";
 
+import thearasia_wilhelm_reinhard_heinkel from "../assets/images/anime_pics/thearasia_wilhelm_reinhard_heinkel.png";
+import reinhard_wilhelm_heinkel_thearasia from "../assets/images/anime_pics/reinhard_wilhelm_heinkel_thearasia.png";
+
+
+
 
 export const images = [
     ainz,
@@ -296,4 +301,6 @@ export const images = [
     solo_leveling_generals,
     statue_of_god,
     unimpressed_jinwoo,
+    thearasia_wilhelm_reinhard_heinkel,
+    reinhard_wilhelm_heinkel_thearasia,
 ];
