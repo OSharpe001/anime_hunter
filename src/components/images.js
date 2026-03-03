@@ -153,6 +153,17 @@ import unimpressed_jinwoo from "../assets/images/anime_pics/unimpressed_jinwoo.p
 import thearasia_wilhelm_reinhard_heinkel from "../assets/images/anime_pics/thearasia_wilhelm_reinhard_heinkel.png";
 import reinhard_wilhelm_heinkel_thearasia from "../assets/images/anime_pics/reinhard_wilhelm_heinkel_thearasia.png";
 
+import ainz_albedo from "../assets/images/anime_pics/ainz_albedo.png";
+import blueRoses from "../assets/images/anime_pics/blueRoses.png";
+import blueRoses2 from "../assets/images/anime_pics/blueRoses2.png";
+import charazard from "../assets/images/anime_pics/charazard.png";
+import evilLordWrath from "../assets/images/anime_pics/evilLordWrath.jpg";
+import mewtwo from "../assets/images/anime_pics/mewtwo.png";
+import momon_gamma from "../assets/images/anime_pics/momon_gamma.png";
+import pidgeot from "../assets/images/anime_pics/pidgeot.png";
+import pikachu from "../assets/images/anime_pics/pikachu.png";
+import raichu from "../assets/images/anime_pics/raichu.png";
+import venusaur from "../assets/images/anime_pics/venusaur.png";
 
 
 
@@ -303,4 +314,15 @@ export const images = [
     unimpressed_jinwoo,
     thearasia_wilhelm_reinhard_heinkel,
     reinhard_wilhelm_heinkel_thearasia,
+    ainz_albedo,
+    blueRoses,
+    blueRoses2,
+    charazard,
+    evilLordWrath,
+    mewtwo,
+    momon_gamma,
+    pidgeot,
+    pikachu,
+    raichu,
+    venusaur,
 ];
